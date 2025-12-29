@@ -1,0 +1,93 @@
+.main-header {
+  transition: height 0.4s ease;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transform: scale(1.1);
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white; // maybe black
+    opacity: 0.1;
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    transition: margin 0.4s ease;
+
+    &--spacer {
+      margin-top: 100px;
+    }
+  }
+
+  &__logo {
+    width: 60%;
+  }
+  &__headline {
+    max-width: 500px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  &__show-more {
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    transition: color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80px;
+
+    &:hover {
+      color: white;
+
+      .main-header__show-more__hover-text {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-4px);
+      }
+    }
+
+    &__hover-text {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      opacity: 0;
+      pointer-events: none;
+      white-space: nowrap;
+      font-size: 22px;
+      color: white;
+
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+  }
+}
