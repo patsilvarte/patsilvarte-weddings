@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import photo_patricia_joao_b31 from "../assets/patricia_joao/b_31.jpg";
 import photo_patricia_joao_b6 from "../assets/patricia_joao/b_6.jpg";
 import type { WeddingInfo } from "../types";
 import { Button } from "./general/Button";
@@ -12,6 +13,7 @@ export const WeddingsList = () => {
       name: "Patrícia e João",
       alt: "casamento Patrícia e João",
       img: photo_patricia_joao_b6,
+      img_hover: photo_patricia_joao_b31,
       tags: [
         "Identidade visual",
         "convites",
@@ -27,6 +29,7 @@ export const WeddingsList = () => {
       name: "Glória e Micael",
       alt: "casamento Glória e Micael",
       img: photo_patricia_joao_b6,
+      img_hover: photo_patricia_joao_b31,
       tags: [
         "Identidade visual",
         "convites",
@@ -42,6 +45,7 @@ export const WeddingsList = () => {
       name: "Sofia e Julien",
       alt: "casamento Sofia e Julien",
       img: photo_patricia_joao_b6,
+      img_hover: photo_patricia_joao_b31,
       tags: ["paineis boas vindas"],
     },
   ];

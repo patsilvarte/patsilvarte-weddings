@@ -17,9 +17,25 @@
     flex-wrap: wrap;
   }
 
+  &__card:hover {
+    .weddings-list__card-hover {
+      visibility: visible;
+    }
+  }
+
+  &__card-hover {
+    visibility: hidden;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+
   &__card-overlay {
     position: absolute;
     bottom: 0;
+    width: inherit;
+    background-color: rgba(215, 220, 188, 0.7);
   }
 
   &__card-tags {

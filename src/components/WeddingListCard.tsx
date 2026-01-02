@@ -14,10 +14,18 @@ interface WeddingListCardProps {
 }
 
 export const WeddingListCard: FC<WeddingListCardProps> = ({ info }) => {
-  const { name, tags, img, alt } = info;
+  const { name, tags, img, alt, img_hover } = info;
   return (
-    <Card sx={{ maxWidth: 1100, minWidth: 300, width: "30%", height: 500 }}>
+    <Card
+      sx={{ maxWidth: 1100, minWidth: 300, width: "30%" }}
+      className="weddings-list__card"
+    >
       <CardActionArea>
+        <CardMedia
+          component="img"
+          image={img_hover}
+          className="weddings-list__card-hover"
+        />
         <CardMedia component="img" height={500} image={img} alt={alt} />
         <CardContent className="weddings-list__card-overlay">
           <Typography gutterBottom variant="h5" component="div">
