@@ -1,9 +1,12 @@
 import { useState, type FC } from "react";
 import { MainHeader } from "./MainHeader";
 import { Navbar } from "./Navbar";
+import { WeddingsList } from "./WeddingsList";
 
 export const Homepage: FC = () => {
   const [showHeader, setShowHeader] = useState<boolean>(false);
+
+  // lock scroll when !showHeader
 
   return (
     <div className="homepage">
@@ -12,11 +15,7 @@ export const Homepage: FC = () => {
         visibleHeader={showHeader}
         setHeaderVisible={() => setShowHeader(true)}
       />
-      {/*
-    // navbar que começa com height 0
-    // div full screen com logo no meio e descrição do patsilvarte e seta no fim para iteração
-    
-    */}
+      <WeddingsList />
     </div>
   );
 };
