@@ -3,7 +3,8 @@ import { Button } from "./general/Button";
 import { WeddingListCard } from "./WeddingListCard";
 
 import type { FC } from "react";
-import { full_weddings_list } from "../info/data";
+import { useNavigate } from "react-router-dom";
+import { full_weddings_list, highlight_weddings_list } from "../info/data";
 import "./WeddingsList.scss";
 
 interface WeddingListProps {
@@ -12,16 +13,16 @@ interface WeddingListProps {
 }
 
 export const WeddingsList: FC<WeddingListProps> = ({ ref, isHomepage }) => {
-  const finalList = isHomepage
-    ? full_weddings_list.slice(0, 3)
-    : full_weddings_list;
+  const navigate = useNavigate();
+
+  const finalList = isHomepage ? highlight_weddings_list : full_weddings_list;
 
   return (
     <div className="weddings-list" ref={ref} id="casamentos">
       <Typography variant="h3" gutterBottom>
         Casamentos
       </Typography>
-      <Typography variant="h6" component="body" gutterBottom>
+      <Typography variant="h6" gutterBottom>
         Detalhes sobre o dia especial dos nossos clientes
       </Typography>
 
@@ -31,7 +32,11 @@ export const WeddingsList: FC<WeddingListProps> = ({ ref, isHomepage }) => {
         ))}
       </div>
 
-      <Button>Explorar todos os casamentos</Button>
+      {isHomepage && (
+        <Button onClick={() => navigate("/casamentos")}>
+          Explorar todos os casamentos
+        </Button>
+      )}
     </div>
   );
 };

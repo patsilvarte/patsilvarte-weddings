@@ -33,7 +33,9 @@ export const WeddingListCard: FC<WeddingListCardProps> = ({ info }) => {
           )}
           <div className="weddings-list__card-tags">
             {tags.map((tag) => (
-              <Typography variant="body2">{tag}</Typography>
+              <Typography variant="body2" key={tag}>
+                {tag}
+              </Typography>
             ))}
           </div>
         </CardContent>
