@@ -6,7 +6,7 @@ import {
   Typography,
 } from "@mui/material";
 import type { FC } from "react";
-import type { WeddingInfo } from "../types";
+import type { WeddingInfo } from "../info/types";
 import "./WeddingsList.scss";
 
 interface WeddingListCardProps {
