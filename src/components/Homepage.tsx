@@ -1,8 +1,8 @@
 import { useRef, type FC } from "react";
 import { smoothScrollTo } from "../utils/smoothScrollTo";
 import { useLock } from "../utils/useLock";
+import { Navbar } from "./general/Navbar";
 import { MainHeader } from "./MainHeader";
-import { Navbar } from "./Navbar";
 import { WeddingsList } from "./WeddingsList";
 
 export const Homepage: FC = () => {

@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { useNavigate } from "react-router-dom";
-import patsilvarteLogoWideWhite from "../assets/Patsilvarte_logo_horizontal_white.svg";
-import { Button } from "./general/Button";
+import patsilvarteLogoWideWhite from "../../assets/Patsilvarte_logo_horizontal_white.svg";
+import { Button } from "./Button";
 import "./Navbar.scss";
 
 interface NavbarProps {
