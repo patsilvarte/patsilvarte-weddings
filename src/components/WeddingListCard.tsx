@@ -21,26 +21,19 @@ export const WeddingListCard: FC<WeddingListCardProps> = ({ info }) => {
       className="weddings-list__card"
     >
       <CardActionArea>
-        <CardMedia
-          component="img"
-          image={img_hover}
-          className="weddings-list__card-hover"
-        />
         <CardMedia component="img" height={500} image={img} alt={alt} />
         <CardContent className="weddings-list__card-overlay">
-          <Typography gutterBottom variant="h5" component="div">
-            {name}
-          </Typography>
+          {img_hover ? (
+            <img className="weddings-list__card-names" src={img_hover} />
+          ) : (
+            // <CardMedia component="img" width={200} image={img_hover} />
+            <Typography gutterBottom variant="h5" component="div">
+              {name}
+            </Typography>
+          )}
           <div className="weddings-list__card-tags">
-            {tags.map((tag, index) => (
-              <>
-                {index !== 0 && (
-                  <div className="weddings-list__card-tags__seperator" />
-                )}
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  {tag}
-                </Typography>
-              </>
+            {tags.map((tag) => (
+              <Typography variant="body2">{tag}</Typography>
             ))}
           </div>
         </CardContent>

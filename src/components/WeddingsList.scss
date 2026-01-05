@@ -18,38 +18,35 @@
   }
 
   &__card:hover {
-    .weddings-list__card-hover {
+    .weddings-list__card-overlay {
       visibility: visible;
     }
   }
 
-  &__card-hover {
+  &__card-overlay {
     visibility: hidden;
-    height: 100%;
     position: absolute;
     top: 0;
     z-index: 2;
+    height: -webkit-fill-available;
+    background-color: rgba(215, 220, 188, 0.7);
+
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  &__card-overlay {
-    position: absolute;
-    bottom: 0;
-    width: inherit;
-    background-color: rgba(215, 220, 188, 0.7);
+  &__card-names {
+    width: 80%;
   }
 
   &__card-tags {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 0px 8px;
     flex-wrap: wrap;
-
-    &__seperator {
-      height: 6px;
-      width: 6px;
-      background-color: #535931;
-      border-radius: 100%;
-    }
+    color: #535931;
   }
 }
