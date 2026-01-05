@@ -1,22 +1,25 @@
-import { useState, type FC } from "react";
+import { useRef, type FC } from "react";
+import { smoothScrollTo } from "../utils/smoothScrollTo";
+import { useLock } from "../utils/useLock";
 import { MainHeader } from "./MainHeader";
 import { Navbar } from "./Navbar";
+import { WeddingsList } from "./WeddingsList";
 
 export const Homepage: FC = () => {
-  const [showHeader, setShowHeader] = useState<boolean>(false);
+  const firstSection = useRef<HTMLDivElement | null>(null);
+  const { unlock, isLocked } = useLock();
+
+  const showWebsite = () => {
+    unlock();
+    const y = firstSection.current?.getBoundingClientRect().top ?? 0;
+    smoothScrollTo(window.scrollY + y, 1500); // 1.2s duration
+  };
 
   return (
-    <div className="homepage">
-      <Navbar visible={showHeader} />
-      <MainHeader
-        visibleHeader={showHeader}
-        setHeaderVisible={() => setShowHeader(true)}
-      />
-      {/*
-    // navbar que começa com height 0
-    // div full screen com logo no meio e descrição do patsilvarte e seta no fim para iteração
-    
-    */}
+    <div className="homepage" id="homepage">
+      <Navbar visible={!isLocked} />
+      <MainHeader visibleHeader={!isLocked} setHeaderVisible={showWebsite} />
+      <WeddingsList ref={firstSection} isHomepage />
     </div>
   );
 };
