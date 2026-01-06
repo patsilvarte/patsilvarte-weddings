@@ -24,39 +24,37 @@ import d7 from "../../assets/patricia_joao/d_7.jpg";
 import d9 from "../../assets/patricia_joao/d_9.jpg";
 import f134 from "../../assets/patricia_joao/f_134.jpg";
 import f135 from "../../assets/patricia_joao/f_135.jpg";
-import f185 from "../../assets/patricia_joao/f_185.jpg";
 import f196 from "../../assets/patricia_joao/f_196.jpg";
-import o1 from "../../assets/patricia_joao/outros_1.png";
-import o2 from "../../assets/patricia_joao/outros_2.png";
-import o3 from "../../assets/patricia_joao/outros_3.png";
+import o12 from "../../assets/patricia_joao/outros_1.2.png";
+import o22 from "../../assets/patricia_joao/outros_2.2.png";
+import o32 from "../../assets/patricia_joao/outros_3.2.png";
 
 const photosList = [
   b6,
   b31,
   a5,
-  a3,
+  o32,
   a21,
-  a23,
+  a3,
   a15,
-  d9,
-  d11,
-  d1,
-  d2,
+  o22,
+  o12,
+  a23,
   d12,
   d13,
-  d14,
-  d21,
+  d9,
+  d2,
+  d11,
   d32,
+  d1,
+  d21,
+  d35,
+  d14,
   d7,
   d34,
-  d35,
   f134,
   f135,
-  f185,
   f196,
-  o1,
-  o2,
-  o3,
 ];
 
 export const PatriciaJoaoWeddingDetails = () => {
