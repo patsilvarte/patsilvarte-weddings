@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import { useLocation, useNavigationType } from "react-router-dom";
 import { useScrollLock } from "usehooks-ts";
 
@@ -10,35 +10,40 @@ export const useLock = () => {
   const location = useLocation();
   const navigationType = useNavigationType();
 
-  const shouldLockScroll = () => {
-    const lastUnlocked = sessionStorage.getItem(SCROLL_UNLOCK_KEY);
-    if (!lastUnlocked) return true;
-
-    const elapsed = Date.now() - Number(lastUnlocked);
-    return elapsed > COOLDOWN_MS;
-  };
-
-  const markScrollUnlocked = () => {
+  const markScrollUnlocked = useCallback(() => {
     sessionStorage.setItem(SCROLL_UNLOCK_KEY, Date.now().toString());
     unlock();
-  };
+
+    // HARD RESET (this is the key)
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
+  }, [unlock]);
 
   useEffect(() => {
     const cameFromAnotherPage = navigationType === "PUSH";
-
     if (cameFromAnotherPage) {
       markScrollUnlocked();
       return;
     }
+    const lastUnlocked = sessionStorage.getItem(SCROLL_UNLOCK_KEY);
+    const shouldLock =
+      !lastUnlocked || Date.now() - Number(lastUnlocked) > COOLDOWN_MS;
 
-    if (shouldLockScroll()) {
+    if (shouldLock) {
       window.scrollTo(0, 0);
       lock();
     } else {
       markScrollUnlocked();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location.pathname]);
+  }, [location.pathname, unlock, lock, navigationType, markScrollUnlocked]);
+
+  useEffect(() => {
+    // HARD RESET to allow scroll on other pages
+    return () => {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    };
+  }, []);
 
   return {
     unlock: markScrollUnlocked,
