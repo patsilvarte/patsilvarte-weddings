@@ -9,6 +9,7 @@ const casamento_patricia_joao_13_7_24: WeddingInfo = {
   alt: "casamento Patrícia e João",
   img: photo_patricia_joao_b6,
   img_hover: PJ_names_logo,
+  url: "/casamentos/130724-patricia-joao",
   tags: [
     WeddingServices.IDENTIDADE_VISUAL,
     WeddingServices.CONVITES,

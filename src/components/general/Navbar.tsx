@@ -11,6 +11,11 @@ interface NavbarProps {
 export const Navbar: FC<NavbarProps> = ({ visible = true }) => {
   const navigate = useNavigate();
 
+  const goToHome = () => {
+    navigate("/");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className={`navbar navbar--${visible ? "visible" : "invisible"}`}>
       <div className="navbar__container">
@@ -21,7 +26,7 @@ export const Navbar: FC<NavbarProps> = ({ visible = true }) => {
           <Button variant="navigation">Serviços</Button>
         </div>
         <img
-          onClick={() => navigate("/")}
+          onClick={goToHome}
           className="navbar__logo"
           src={patsilvarteLogoWideWhite}
         />

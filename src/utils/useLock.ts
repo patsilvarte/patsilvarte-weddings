@@ -27,7 +27,7 @@ export const useLock = () => {
     const cameFromAnotherPage = navigationType === "PUSH";
 
     if (cameFromAnotherPage) {
-      unlock();
+      markScrollUnlocked();
       return;
     }
 
@@ -35,7 +35,7 @@ export const useLock = () => {
       window.scrollTo(0, 0);
       lock();
     } else {
-      unlock();
+      markScrollUnlocked();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);

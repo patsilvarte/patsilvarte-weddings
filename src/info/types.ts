@@ -4,6 +4,7 @@ export type WeddingInfo = {
   img: string;
   img_hover?: string;
   alt: string;
+  url?: string;
 };
 
 export enum WeddingServices {
