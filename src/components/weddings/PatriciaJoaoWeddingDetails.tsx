@@ -25,20 +25,20 @@ import d9 from "../../assets/patricia_joao/d_9.jpg";
 import f134 from "../../assets/patricia_joao/f_134.jpg";
 import f135 from "../../assets/patricia_joao/f_135.jpg";
 import f196 from "../../assets/patricia_joao/f_196.jpg";
-import o12 from "../../assets/patricia_joao/outros_1.2.png";
-import o22 from "../../assets/patricia_joao/outros_2.2.png";
-import o32 from "../../assets/patricia_joao/outros_3.2.png";
+import o1 from "../../assets/patricia_joao/outros_1.png";
+import o2 from "../../assets/patricia_joao/outros_2.png";
+import o3 from "../../assets/patricia_joao/outros_3.png";
 
 const photosList = [
   b6,
   b31,
   a5,
-  o32,
+  o3,
   a21,
   a3,
   a15,
-  o22,
-  o12,
+  o2,
+  o1,
   a23,
   d12,
   d13,
