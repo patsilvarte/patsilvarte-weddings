@@ -1,0 +1,14 @@
+.wedding-details {
+  padding-top: 120px;
+  text-align: center;
+
+  &__grid {
+    padding: 30px 100px;
+  }
+
+  &__grid-image {
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+}
