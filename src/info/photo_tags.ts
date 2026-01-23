@@ -26,105 +26,131 @@ import o3 from "../assets/patricia_joao/outros_3.png";
 import { WeddingServices, type PhotoInfo } from "./types";
 
 export const b6_photo: PhotoInfo = {
-    src: b6,
-    tags: [WeddingServices.PATRICIA_JOAO],
-}
+  src: b6,
+  tags: [WeddingServices.PATRICIA_JOAO],
+};
 export const b31_photo: PhotoInfo = {
-    src: b31,
-    tags: [WeddingServices.PATRICIA_JOAO],
-}
+  src: b31,
+  tags: [WeddingServices.PATRICIA_JOAO],
+};
 export const a5_photo: PhotoInfo = {
-    src: a5,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
-}
+  src: a5,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
+};
 export const o3_photo: PhotoInfo = {
-    src: o3,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.CONVITES, WeddingServices.LEMBRANÇAS, WeddingServices.NUMEROS_MESA, WeddingServices.NUMEROS_MESA],
-}
+  src: o3,
+  tags: [
+    WeddingServices.PATRICIA_JOAO,
+    WeddingServices.CONVITES,
+    WeddingServices.LEMBRANÇAS,
+    WeddingServices.MENUS,
+    WeddingServices.NUMEROS_MESA,
+  ],
+};
 export const a21_photo: PhotoInfo = {
-    src: a21,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
-}
+  src: a21,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
+};
 export const a3_photo: PhotoInfo = {
-    src: a3,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS, WeddingServices.CONVITES],
-}
+  src: a3,
+  tags: [
+    WeddingServices.PATRICIA_JOAO,
+    WeddingServices.EXTRAS,
+    WeddingServices.CONVITES,
+  ],
+};
 export const a15_photo: PhotoInfo = {
-    src: a15,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.CONVITES],
-}
+  src: a15,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.CONVITES],
+};
 export const o2_photo: PhotoInfo = {
-    src: o2,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.CONVITES],
-}
+  src: o2,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.CONVITES],
+};
 export const o1_photo: PhotoInfo = {
-    src: o1,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
-}
+  src: o1,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
+};
 export const a23_photo: PhotoInfo = {
-    src: a23,
-    tags: [WeddingServices.PATRICIA_JOAO],
-}
+  src: a23,
+  tags: [WeddingServices.PATRICIA_JOAO],
+};
 export const d12_photo: PhotoInfo = {
-    src: d12,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
-}
+  src: d12,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
+};
 export const d13_photo: PhotoInfo = {
-    src: d13,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
-}
+  src: d13,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
+};
 export const d9_photo: PhotoInfo = {
-    src: d9,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
-}
+  src: d9,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.EXTRAS],
+};
 export const d2_photo: PhotoInfo = {
-    src: d2,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.NUMEROS_MESA, WeddingServices.ALUGUER, WeddingServices.MENUS],
-}
+  src: d2,
+  tags: [
+    WeddingServices.PATRICIA_JOAO,
+    WeddingServices.NUMEROS_MESA,
+    WeddingServices.ALUGUER,
+  ],
+};
 export const d11_photo: PhotoInfo = {
-    src: d11,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS, WeddingServices.ALUGUER],
-}
+  src: d11,
+  tags: [
+    WeddingServices.PATRICIA_JOAO,
+    WeddingServices.PAINEIS_BOAS_VINDAS,
+    WeddingServices.ALUGUER,
+  ],
+};
 export const d32_photo: PhotoInfo = {
-    src: d32,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.LEMBRANÇAS],
-}
+  src: d32,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.LEMBRANÇAS],
+};
 export const d1_photo: PhotoInfo = {
-    src: d1,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.MENUS],
-}
+  src: d1,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.MENUS],
+};
 export const d21_photo: PhotoInfo = {
-    src: d21,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.MENUS],
-}
+  src: d21,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.MENUS],
+};
 export const d35_photo: PhotoInfo = {
-    src: d35,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS, WeddingServices.ALUGUER],
-}
+  src: d35,
+  tags: [
+    WeddingServices.PATRICIA_JOAO,
+    WeddingServices.PAINEIS_BOAS_VINDAS,
+    WeddingServices.ALUGUER,
+  ],
+};
 export const d14_photo: PhotoInfo = {
-    src: d14,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.NUMEROS_MESA, WeddingServices.ALUGUER, WeddingServices.MENUS],
-}
+  src: d14,
+  tags: [
+    WeddingServices.PATRICIA_JOAO,
+    WeddingServices.NUMEROS_MESA,
+    WeddingServices.ALUGUER,
+  ],
+};
 export const d7_photo: PhotoInfo = {
-    src: d7,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
-}
+  src: d7,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
+};
 export const d34_photo: PhotoInfo = {
-    src: d34,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
-}
+  src: d34,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
+};
 export const f134_photo: PhotoInfo = {
-    src: f134,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
-}
+  src: f134,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
+};
 export const f135_photo: PhotoInfo = {
-    src: f135,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
-}
+  src: f135,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
+};
 export const f196_photo: PhotoInfo = {
-    src: f196,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART]  
-}
+  src: f196,
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
+};
 
 export const photosListPatriciaJoao: PhotoInfo[] = [
   b6_photo,

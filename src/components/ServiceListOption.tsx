@@ -14,7 +14,7 @@ export const ServiceListOption: FC<ServiceListOptionProps> = ({ info }) => {
     <div
       className="service-card"
       key={info.name}
-      onClick={() => navigate(`/servicos/${info.tag}`)}
+      onClick={() => navigate(info.url)}
       style={{ cursor: "pointer" }}
     >
       <img

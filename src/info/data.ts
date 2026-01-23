@@ -59,6 +59,7 @@ export const services_list: ServiceInfo[] = [
   {
     name: "Convites",
     tag: WeddingServices.CONVITES,
+    url: "/servicos/convites",
     description:
       "Criamos convites de casamento personalizados que contam a história única de cada casal, desde os elegantes cartões de RSVP até os envelopes sofisticados. Utilizamos materiais de alta qualidade e designs exclusivos para capturar a essência do amor e da celebração. Oferecemos uma ampla gama de opções, desde convites físicos tradicionais que encantam ao toque, até modernos convites digitais e websites de casamento que conectam corações à distância.",
     cover: "convites.svg",
@@ -66,6 +67,7 @@ export const services_list: ServiceInfo[] = [
   {
     name: "Seating chart",
     tag: WeddingServices.SEATING_CHART,
+    url: "/servicos/seating-chart",
     description:
       "Criamos mapas de assentos personalizados que combinam funcionalidade e beleza, ajudando a organizar a disposição dos convidados com elegância. Cada design é pensado para refletir o estilo do evento, garantindo que todos os convidados encontrem seus lugares com facilidade e encantamento.",
     cover: "seating_chart.svg",
@@ -73,6 +75,7 @@ export const services_list: ServiceInfo[] = [
   {
     name: "Paineis de boas vindas",
     tag: WeddingServices.PAINEIS_BOAS_VINDAS,
+    url: "/servicos/paineis-boas-vindas",
     description:
       "Receba seus convidados com paineis de boas-vindas que encantam e criam uma atmosfera inesquecível. Desenvolvemos designs únicos e personalizados que harmonizam com o tema do casamento, proporcionando uma recepção calorosa e cheia de estilo.",
     cover: "painel_boas_vindas.svg",
@@ -80,6 +83,7 @@ export const services_list: ServiceInfo[] = [
   {
     name: "Menus",
     tag: WeddingServices.MENUS,
+    url: "/servicos/menus",
     description:
       "Transforme o banquete do seu casamento em uma experiência memorável com menus elegantes e personalizados. Cada design é criado para complementar o tema do evento, adicionando um toque de sofisticação à mesa e encantando os convidados.",
     cover: "menus.svg",
@@ -87,6 +91,7 @@ export const services_list: ServiceInfo[] = [
   {
     name: "Números de mesa",
     tag: WeddingServices.NUMEROS_MESA,
+    url: "/servicos/numeros-mesa",
     description:
       "Adicione charme e organização ao seu casamento com números de mesa personalizados. Criamos designs que não apenas orientam os convidados, mas também complementam a decoração, garantindo uma experiência harmoniosa e inesquecível.",
     cover: "numeros_mesa.svg",
@@ -94,6 +99,7 @@ export const services_list: ServiceInfo[] = [
   {
     name: "Aluguer",
     tag: WeddingServices.ALUGUER,
+    url: "/servicos/aluguer",
     description:
       "Oferecemos um serviço completo de aluguer de materiais e decorações para casamentos, com itens que atendem às necessidades específicas de cada evento. Nossa seleção combina qualidade e estilo, ajudando a criar um ambiente único e inesquecível.",
     cover: "aluguer.svg",
@@ -101,6 +107,7 @@ export const services_list: ServiceInfo[] = [
   {
     name: "Lembranças",
     tag: WeddingServices.LEMBRANÇAS,
+    url: "/servicos/lembrancas",
     description:
       "Crie memórias inesquecíveis com lembranças personalizadas que refletem o amor e a essência do seu casamento. Desenvolvemos itens únicos e significativos para que seus convidados levem para casa uma parte especial do seu grande dia.",
     cover: "lembrancas.svg",
