@@ -1,4 +1,4 @@
-import { Navbar } from "./Navbar";
+import { Navbar } from "./general/Navbar";
 import { WeddingsList } from "./WeddingsList";
 
 export const Weddings = () => {

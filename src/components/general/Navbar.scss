@@ -1,0 +1,42 @@
+.navbar {
+  color: white;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  &--visible {
+    height: 90px;
+  }
+
+  &--invisible {
+    height: 0px;
+  }
+
+  &__container {
+    background-color: #535931;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 160px;
+    margin-top: 10px;
+  }
+
+  &__left,
+  &__right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__right {
+    justify-content: end;
+  }
+}

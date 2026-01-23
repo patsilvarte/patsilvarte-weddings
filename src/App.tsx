@@ -6,6 +6,7 @@ import { type FC } from "react";
 import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import { Homepage } from "./components/Homepage";
 import { Weddings } from "./components/Weddings";
+import { PatriciaJoaoWeddingDetails } from "./components/weddings/PatriciaJoaoWeddingDetails";
 
 export const App: FC = () => {
   return (
@@ -13,6 +14,10 @@ export const App: FC = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/casamentos" element={<Weddings />} />
+        <Route
+          path="/casamentos/130724-patricia-joao"
+          element={<PatriciaJoaoWeddingDetails />}
+        />
       </Routes>
     </Router>
   );
