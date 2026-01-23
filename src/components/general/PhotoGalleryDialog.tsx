@@ -27,8 +27,26 @@ export const PhotoGalleryDialog:FC<PhotoGalleryDialogProps> = ({ open, handleClo
     setActiveIndex((prev) => (prev === photosList.length - 1 ? 0 : prev + 1));
   }
 
+  const close = (
+    _: unknown,
+    reason: "backdropClick" | "escapeKeyDown"
+  ) => {
+    if (reason === "backdropClick") return;
+    handleClose();
+  };
+
   return (
-    <Dialog open={open} onClose={handleClose} fullScreen>
+    <Dialog open={open} onClose={close} 
+    slotProps={{
+      backdrop: {
+        sx: {
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          backdropFilter: "blur(6px)",
+        },
+      },
+    }}
+    maxWidth="lg"
+  >
       <Box className="photo-gallery-dialog__box">
           <IconButton
             className="photo-gallery-dialog__icon photo-gallery-dialog__icon--close"
