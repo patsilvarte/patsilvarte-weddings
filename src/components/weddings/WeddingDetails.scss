@@ -1,28 +1,4 @@
 .wedding-details {
   padding-top: 120px;
   text-align: center;
-
-  &__grid {
-    padding: 30px 100px;
-    overflow: hidden;
-  }
-
-  &__grid-box {
-    transition: opacity 2500ms ease-in-out, transform 2500ms ease-in-out;
-
-    &--visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    &--invisible {
-      opacity: 0;
-      transform: translateY(12px);
-    }
-  }
-
-  &__grid-image {
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-  }
 }
