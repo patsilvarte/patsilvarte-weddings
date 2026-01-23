@@ -1,14 +1,20 @@
 export type WeddingInfo = {
   name: string;
-  tags: string[];
+  tags: WeddingServices[];
   img: string;
   img_hover?: string;
   alt: string;
   url?: string;
 };
 
+export type PhotoInfo = { 
+  src: string; 
+  alt?: string;
+  caption?: string; 
+  tags: WeddingServices[] 
+};
+
 export enum WeddingServices {
-  IDENTIDADE_VISUAL = "Identidade visual",
   CONVITES = "Convites",
   SEATING_CHART = "Seating chart",
   PAINEIS_BOAS_VINDAS = "Paineis boas vindas",
@@ -17,4 +23,8 @@ export enum WeddingServices {
   ALUGUER = "Aluguer",
   LEMBRANÇAS = "Lembranças",
   EXTRAS = "Extras",
+
+  PATRICIA_JOAO = "Patrícia e João",
+  GLORIA_MICAEL = "Glória e Micael",
+  SOFIA_JULIEN = "Sofia e Julien",
 }

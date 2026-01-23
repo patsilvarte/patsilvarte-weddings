@@ -4,59 +4,8 @@ import { Navbar } from "../general/Navbar";
 import "./WeddingDetails.scss";
 
 import { useState } from "react";
-import a15 from "../../assets/patricia_joao/a_15.jpg";
-import a21 from "../../assets/patricia_joao/a_21.jpg";
-import a23 from "../../assets/patricia_joao/a_23.jpg";
-import a3 from "../../assets/patricia_joao/a_3.jpg";
-import a5 from "../../assets/patricia_joao/a_5.jpg";
-import b31 from "../../assets/patricia_joao/b_31.jpg";
-import b6 from "../../assets/patricia_joao/b_6.jpg";
-import d1 from "../../assets/patricia_joao/d_1.jpg";
-import d11 from "../../assets/patricia_joao/d_11.jpg";
-import d12 from "../../assets/patricia_joao/d_12.jpg";
-import d13 from "../../assets/patricia_joao/d_13.jpg";
-import d14 from "../../assets/patricia_joao/d_14.jpg";
-import d2 from "../../assets/patricia_joao/d_2.jpg";
-import d21 from "../../assets/patricia_joao/d_21.jpg";
-import d32 from "../../assets/patricia_joao/d_32.jpg";
-import d34 from "../../assets/patricia_joao/d_34.jpg";
-import d35 from "../../assets/patricia_joao/d_35.jpg";
-import d7 from "../../assets/patricia_joao/d_7.jpg";
-import d9 from "../../assets/patricia_joao/d_9.jpg";
-import f134 from "../../assets/patricia_joao/f_134.jpg";
-import f135 from "../../assets/patricia_joao/f_135.jpg";
-import f196 from "../../assets/patricia_joao/f_196.jpg";
-import o1 from "../../assets/patricia_joao/outros_1.png";
-import o2 from "../../assets/patricia_joao/outros_2.png";
-import o3 from "../../assets/patricia_joao/outros_3.png";
+import { photosListPatriciaJoao } from "../../info/photo_tags";
 
-const photosList = [
-  b6,
-  b31,
-  a5,
-  o3,
-  a21,
-  a3,
-  a15,
-  o2,
-  o1,
-  a23,
-  d12,
-  d13,
-  d9,
-  d2,
-  d11,
-  d32,
-  d1,
-  d21,
-  d35,
-  d14,
-  d7,
-  d34,
-  f134,
-  f135,
-  f196,
-];
 
 export const PatriciaJoaoWeddingDetails = () => {
   const [loaded, setLoaded] = useState<Record<number, boolean>>({});
@@ -74,7 +23,7 @@ export const PatriciaJoaoWeddingDetails = () => {
           defaultColumns={3}
           defaultSpacing={2}
         >
-          {photosList.map((item, index) => (
+          {photosListPatriciaJoao.map((item, index) => (
             <div
               className={`wedding-details__grid-box wedding-details__grid-box--${
                 loaded[index] ? "visible" : "invisible"
