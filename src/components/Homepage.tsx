@@ -3,6 +3,7 @@ import { smoothScrollTo } from "../utils/smoothScrollTo";
 import { useLock } from "../utils/useLock";
 import { Navbar } from "./general/Navbar";
 import { MainHeader } from "./MainHeader";
+import { ServicesList } from "./ServicesList";
 import { WeddingsList } from "./WeddingsList";
 
 export const Homepage: FC = () => {
@@ -20,6 +21,7 @@ export const Homepage: FC = () => {
       <Navbar visible={!isLocked} />
       <MainHeader visibleHeader={!isLocked} setHeaderVisible={showWebsite} />
       <WeddingsList ref={firstSection} isHomepage />
+      <ServicesList />
     </div>
   );
 };

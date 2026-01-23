@@ -79,11 +79,11 @@ export const d9_photo: PhotoInfo = {
 }
 export const d2_photo: PhotoInfo = {
     src: d2,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.NUMEROS_MESA, WeddingServices.MENUS],
+    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.NUMEROS_MESA, WeddingServices.ALUGUER, WeddingServices.MENUS],
 }
 export const d11_photo: PhotoInfo = {
     src: d11,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS],
+    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS, WeddingServices.ALUGUER],
 }
 export const d32_photo: PhotoInfo = {
     src: d32,
@@ -99,31 +99,31 @@ export const d21_photo: PhotoInfo = {
 }
 export const d35_photo: PhotoInfo = {
     src: d35,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS],
+    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS, WeddingServices.ALUGUER],
 }
 export const d14_photo: PhotoInfo = {
     src: d14,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.NUMEROS_MESA, WeddingServices.MENUS],
+    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.NUMEROS_MESA, WeddingServices.ALUGUER, WeddingServices.MENUS],
 }
 export const d7_photo: PhotoInfo = {
     src: d7,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS],
+    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
 }
 export const d34_photo: PhotoInfo = {
     src: d34,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS],
+    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
 }
 export const f134_photo: PhotoInfo = {
     src: f134,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS],
+    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
 }
 export const f135_photo: PhotoInfo = {
     src: f135,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS],
+    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
 }
 export const f196_photo: PhotoInfo = {
     src: f196,
-    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.PAINEIS_BOAS_VINDAS]  
+    tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART]  
 }
 
 export const photosListPatriciaJoao: PhotoInfo[] = [

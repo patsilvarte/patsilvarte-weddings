@@ -1,0 +1,24 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
