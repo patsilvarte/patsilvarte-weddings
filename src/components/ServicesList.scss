@@ -4,6 +4,9 @@
   align-items: center;
   padding: 200px 100px;
 
+  &--limited {
+    padding: 50px 100px 100px;
+  }
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +14,10 @@
     gap: 24px;
     width: 100%;
     max-width: 1000px;
-    margin-top: 60px;
+    margin-top: 40px;
+  }
+
+  &__description {
+    margin-bottom: 20px;
   }
 }

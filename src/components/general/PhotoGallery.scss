@@ -1,11 +1,11 @@
 .photo-gallery {
-
-  padding: 30px 100px;
+  padding: 30px 0px;
   overflow: hidden;
 
-
   &__box {
-    transition: opacity 2500ms ease-in-out, transform 2500ms ease-in-out;
+    transition:
+      opacity 2500ms ease-in-out,
+      transform 2500ms ease-in-out;
 
     &--visible {
       opacity: 1;
