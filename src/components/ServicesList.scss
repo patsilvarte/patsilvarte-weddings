@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 100px;
+  padding-top: 100px;
 
   &--limited {
-    padding: 50px 100px 100px;
+    padding: 50px 0px 100px;
   }
   &__container {
     display: flex;

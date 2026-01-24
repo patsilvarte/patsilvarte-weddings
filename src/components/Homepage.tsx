@@ -2,6 +2,7 @@ import { useRef, type FC } from "react";
 import { smoothScrollTo } from "../utils/smoothScrollTo";
 import { useLock } from "../utils/useLock";
 import { Navbar } from "./general/Navbar";
+import { HomePageSection } from "./homepage/HomePageSection";
 import { MainHeader } from "./MainHeader";
 import { ServicesList } from "./ServicesList";
 import { WeddingsList } from "./WeddingsList";
@@ -20,8 +21,12 @@ export const Homepage: FC = () => {
     <div className="homepage" id="homepage">
       <Navbar visible={!isLocked} />
       <MainHeader visibleHeader={!isLocked} setHeaderVisible={showWebsite} />
-      <WeddingsList ref={firstSection} isHomepage />
-      <ServicesList />
+      <HomePageSection>
+        <WeddingsList ref={firstSection} isHomepage />
+      </HomePageSection>
+      <HomePageSection>
+        <ServicesList />
+      </HomePageSection>
     </div>
   );
 };

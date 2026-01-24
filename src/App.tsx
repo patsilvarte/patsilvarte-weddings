@@ -10,6 +10,7 @@ import {
   Routes,
 } from "react-router-dom";
 import { Homepage } from "./components/Homepage";
+import { Services } from "./components/Services";
 import { Weddings } from "./components/Weddings";
 import { PatriciaJoaoWeddingDetails } from "./components/details/PatriciaJoaoWeddingDetails";
 import { ServiceDetails } from "./components/details/ServiceDetails";
@@ -54,7 +55,14 @@ export const App: FC = () => {
           }
         />
 
-        <Route path="/servicos" element={<Homepage />} />
+        <Route
+          path="/servicos"
+          element={
+            <PageLayout>
+              <Services />
+            </PageLayout>
+          }
+        />
         <Route
           path="/servicos/convites"
           element={
