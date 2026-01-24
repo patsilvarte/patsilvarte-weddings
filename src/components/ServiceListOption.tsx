@@ -6,9 +6,13 @@ import "./ServiceListOption.scss";
 
 interface ServiceListOptionProps {
   info: ServiceInfo;
+  small?: boolean;
 }
 
-export const ServiceListOption: FC<ServiceListOptionProps> = ({ info }) => {
+export const ServiceListOption: FC<ServiceListOptionProps> = ({
+  info,
+  small = false,
+}) => {
   const navigate = useNavigate();
   return (
     <div
@@ -20,7 +24,7 @@ export const ServiceListOption: FC<ServiceListOptionProps> = ({ info }) => {
       <img
         src={new URL(`../assets/services/${info.cover}`, import.meta.url).href}
         alt={info.name}
-        className="service-card__image"
+        className={`service-card__image ${small ? "service-card__image--small" : ""}`}
       />
       <Typography variant="subtitle2" className="service-card__text">
         {info.name}

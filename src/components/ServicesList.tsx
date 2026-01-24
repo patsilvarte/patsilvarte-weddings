@@ -11,7 +11,7 @@ interface ServicesListProps {
 
 export const ServicesList: FC<ServicesListProps> = ({ exclude_tags = [] }) => {
   const filteredServices = services_list.filter(
-    (service) => !exclude_tags.includes(service.name),
+    (service) => !exclude_tags.includes(service.tag),
   );
   const is_limited = exclude_tags.length > 0;
 
@@ -21,7 +21,7 @@ export const ServicesList: FC<ServicesListProps> = ({ exclude_tags = [] }) => {
       id="casamentos"
     >
       <Typography variant={is_limited ? "h4" : "h3"} gutterBottom>
-        {is_limited ? "Também poderás precisar" : "Serviços"}
+        {is_limited ? "Outros serviços disponíveis" : "Serviços"}
       </Typography>
       {!is_limited && (
         <div className="services-list__description">
@@ -32,9 +32,11 @@ export const ServicesList: FC<ServicesListProps> = ({ exclude_tags = [] }) => {
         </div>
       )}
 
-      <div className="services-list__container">
+      <div
+        className={`services-list__container ${is_limited ? "services-list__container--limited" : ""}`}
+      >
         {filteredServices.map((info) => (
-          <ServiceListOption info={info} />
+          <ServiceListOption info={info} small={is_limited} />
         ))}
       </div>
     </div>
