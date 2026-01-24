@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import type { FC } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { services_list } from "../../info/data";
 import { allPhotos } from "../../info/photo_tags";
@@ -15,6 +16,10 @@ export const ServiceDetails: FC<ServiceDetailsProps> = ({ service }) => {
   const navigate = useNavigate();
   const photos = allPhotos.filter((photo) => photo.tags.includes(service));
   const service_data = services_list.find((s) => s.tag === service);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [service]);
 
   if (!service_data) {
     navigate("/");
