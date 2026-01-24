@@ -44,7 +44,6 @@ export const o3_photo: PhotoInfo = {
     WeddingServices.CONVITES,
     WeddingServices.LEMBRANÇAS,
     WeddingServices.MENUS,
-    WeddingServices.NUMEROS_MESA,
   ],
 };
 export const a21_photo: PhotoInfo = {
@@ -53,11 +52,7 @@ export const a21_photo: PhotoInfo = {
 };
 export const a3_photo: PhotoInfo = {
   src: a3,
-  tags: [
-    WeddingServices.PATRICIA_JOAO,
-    WeddingServices.EXTRAS,
-    WeddingServices.CONVITES,
-  ],
+  tags: [WeddingServices.PATRICIA_JOAO],
 };
 export const a15_photo: PhotoInfo = {
   src: a15,
@@ -97,11 +92,7 @@ export const d2_photo: PhotoInfo = {
 };
 export const d11_photo: PhotoInfo = {
   src: d11,
-  tags: [
-    WeddingServices.PATRICIA_JOAO,
-    WeddingServices.PAINEIS_BOAS_VINDAS,
-    WeddingServices.ALUGUER,
-  ],
+  tags: [WeddingServices.PATRICIA_JOAO],
 };
 export const d32_photo: PhotoInfo = {
   src: d32,
@@ -125,15 +116,11 @@ export const d35_photo: PhotoInfo = {
 };
 export const d14_photo: PhotoInfo = {
   src: d14,
-  tags: [
-    WeddingServices.PATRICIA_JOAO,
-    WeddingServices.NUMEROS_MESA,
-    WeddingServices.ALUGUER,
-  ],
+  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.NUMEROS_MESA],
 };
 export const d7_photo: PhotoInfo = {
   src: d7,
-  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
+  tags: [WeddingServices.PATRICIA_JOAO],
 };
 export const d34_photo: PhotoInfo = {
   src: d34,
@@ -149,7 +136,7 @@ export const f135_photo: PhotoInfo = {
 };
 export const f196_photo: PhotoInfo = {
   src: f196,
-  tags: [WeddingServices.PATRICIA_JOAO, WeddingServices.SEATING_CHART],
+  tags: [WeddingServices.PATRICIA_JOAO],
 };
 
 export const photosListPatriciaJoao: PhotoInfo[] = [

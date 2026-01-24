@@ -119,6 +119,14 @@ export const App: FC = () => {
             </PageLayout>
           }
         />
+        <Route
+          path="/servicos/extras"
+          element={
+            <PageLayout>
+              <ServiceDetails service={WeddingServices.EXTRAS} />
+            </PageLayout>
+          }
+        />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
