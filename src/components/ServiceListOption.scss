@@ -1,0 +1,35 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+    .service-card__image {
+      filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
+      transform: rotate(5deg);
+    }
+  }
+
+  &__image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+
+    &--small {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

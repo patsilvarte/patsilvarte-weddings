@@ -7,11 +7,19 @@ export type WeddingInfo = {
   url?: string;
 };
 
-export type PhotoInfo = { 
-  src: string; 
+export type ServiceInfo = {
+  name: string;
+  description: string;
+  tag: WeddingServices;
+  cover: string; //svg file
+  url: string;
+};
+
+export type PhotoInfo = {
+  src: string;
   alt?: string;
-  caption?: string; 
-  tags: WeddingServices[] 
+  caption?: string;
+  tags: WeddingServices[];
 };
 
 export enum WeddingServices {

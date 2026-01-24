@@ -1,0 +1,29 @@
+.services-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+
+  &--limited {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 80px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 40px;
+
+    &--limited {
+      gap: 24px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 20px;
+  }
+}

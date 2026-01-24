@@ -23,7 +23,9 @@ export const Navbar: FC<NavbarProps> = ({ visible = true }) => {
           <Button variant="navigation" onClick={() => navigate("/casamentos")}>
             Casamentos
           </Button>
-          <Button variant="navigation">Serviços</Button>
+          <Button variant="navigation" onClick={() => navigate("/servicos")}>
+            Serviços
+          </Button>
         </div>
         <img
           onClick={goToHome}
