@@ -8,17 +8,16 @@ import { full_weddings_list, highlight_weddings_list } from "../info/data";
 import "./WeddingsList.scss";
 
 interface WeddingListProps {
-  ref?: React.Ref<HTMLDivElement> | undefined;
   isHomepage?: boolean;
 }
 
-export const WeddingsList: FC<WeddingListProps> = ({ ref, isHomepage }) => {
+export const WeddingsList: FC<WeddingListProps> = ({ isHomepage }) => {
   const navigate = useNavigate();
 
   const finalList = isHomepage ? highlight_weddings_list : full_weddings_list;
 
   return (
-    <div className="weddings-list" ref={ref} id="casamentos">
+    <div className="weddings-list" id="casamentos">
       <Typography variant="h3" gutterBottom>
         Casamentos
       </Typography>
