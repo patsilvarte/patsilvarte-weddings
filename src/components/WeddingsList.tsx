@@ -1,7 +1,7 @@
-import { Typography } from "@mui/material";
 import { Button } from "./general/Button";
 import { WeddingListCard } from "./WeddingListCard";
 
+import { Typography } from "@mui/material";
 import type { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import { full_weddings_list, highlight_weddings_list } from "../info/data";
@@ -18,11 +18,20 @@ export const WeddingsList: FC<WeddingListProps> = ({ isHomepage }) => {
 
   return (
     <div className="weddings-list" id="casamentos">
-      <Typography variant="h3" gutterBottom>
+      {/* <img
+        src={new URL(`../assets/fonts/casamentos.svg`, import.meta.url).href}
+        alt="Casamentos"
+        className="weddings-list__header-image"
+      /> */}
+      <Typography
+        variant="h2"
+        gutterBottom
+        className="HelloJanuaryCyrillicScript"
+      >
         Casamentos
       </Typography>
-      <Typography variant="h6" gutterBottom>
-        Detalhes sobre o dia especial dos nossos clientes
+      <Typography variant="h5" gutterBottom className="HelloParisSansRegular">
+        detalhes sobre o dia especial dos nossos clientes
       </Typography>
 
       <div className="weddings-list__container">

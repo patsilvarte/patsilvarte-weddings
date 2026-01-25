@@ -10,29 +10,33 @@ export const SobreSection = () => {
           Por detrás do Patsilvarte Weddings
         </Typography>
         <Typography variant="body1" gutterBottom>
-          Olá! O meu nome é Patrícia Silva (agora também Fernandes), casei-me em
-          2024 e agora ajudo outros noivos a concretizar o seu sonho através de
-          serviços personalizados de papelaria e decoração.
+          O Patsilvarte Weddings nasceu da vontade de transformar histórias
+          reais em detalhes com significado.
         </Typography>
-        <br />
-        <Typography variant="body1" gutterBottom>
-          Sou amante de trabalhos manuais desde que me lembro, de séries
-          românticas que nos deixam a "chorar baba e ranho" e de adoro ajudar a
-          resolver problemas.
-        </Typography>
+
         <Typography variant="body1" gutterBottom>
           Depois de criar toda a papelaria e decoração do meu próprio casamento,
-          percebi que queria ajudar outros casais a viver o mesmo — um processo
-          cuidado, próximo e pensado ao pormenor.
+          percebi o impacto que os detalhes certos podem ter na forma como um
+          dia é vivido e lembrado.
         </Typography>
+
         <Typography variant="body1" gutterBottom>
-          Assim nasceu o Patsilvarte Weddings, da vontade de transformar
-          histórias reais em detalhes com significado.
+          Mais do que peças bonitas, são elementos que orientam, acompanham e
+          dão identidade a cada momento.
         </Typography>
+
         <Typography variant="body1" gutterBottom>
-          Aqui cada projeto é desenvolvido com tempo, intenção e uma atenção
-          especial aos detalhes que fazem a diferença, para que tenhas o dia dos
-          teus sonhos.
+          Foi aí que percebi que queria ajudar outros casais a viver o mesmo —
+          um processo cuidado, próximo e pensado ao pormenor.
+        </Typography>
+
+        <Typography variant="body1" gutterBottom>
+          Aqui, cada projeto é desenvolvido com tempo, intenção e uma atenção
+          especial aos detalhes que fazem a diferença.
+        </Typography>
+
+        <Typography variant="body2" sx={{ fontStyle: "italic", marginTop: 2 }}>
+          — Patrícia
         </Typography>
       </div>
       <img
