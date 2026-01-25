@@ -1,5 +1,7 @@
 .homepage-section {
   min-height: calc(100vh - 200px);
+  max-width: 1000px;
+  margin: auto;
 
   display: flex;
   flex-direction: column;
