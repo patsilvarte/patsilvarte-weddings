@@ -60,11 +60,7 @@ export const gm_IMG_9255_photo: PhotoInfo = {
 
 export const gm_IMG_9253_photo: PhotoInfo = {
   src: IMG_9253,
-  tags: [
-    WeddingServices.GLORIA_MICAEL,
-    WeddingServices.SEATING_CHART,
-    WeddingServices.ALUGUER,
-  ],
+  tags: [WeddingServices.GLORIA_MICAEL, WeddingServices.SEATING_CHART],
 };
 
 export const gm_IMG_8957_photo: PhotoInfo = {

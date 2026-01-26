@@ -51,6 +51,13 @@ import {
   pj_o2_photo,
   pj_o3_photo,
 } from "./photos/patricia_joao_photo_tags";
+import {
+  sj_IMG_9783_photo,
+  sj_IMG_9785_photo,
+  sj_IMG_9799_photo,
+  sj_IMG_9804_photo,
+  sofiaJulienPhotos,
+} from "./photos/sofia_julien_photo_tags";
 import type { PhotoInfo } from "./types";
 
 export const allPhotos: PhotoInfo[] = [
@@ -101,6 +108,10 @@ export const allPhotos: PhotoInfo[] = [
   gm_IMG_9272_photo,
   gm_IMG_9275_photo,
   gm_outros_1_photo,
+  sj_IMG_9783_photo,
+  sj_IMG_9785_photo,
+  sj_IMG_9799_photo,
+  sj_IMG_9804_photo,
 ];
 
-export { gloriaMicaelPhotos, photosListPatriciaJoao };
+export { gloriaMicaelPhotos, photosListPatriciaJoao, sofiaJulienPhotos };
