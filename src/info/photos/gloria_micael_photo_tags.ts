@@ -21,16 +21,24 @@ import IMG_9253 from "../../assets/gloria_micael/IMG_9253.jpg";
 import IMG_9255 from "../../assets/gloria_micael/IMG_9255.jpg";
 import IMG_9272 from "../../assets/gloria_micael/IMG_9272.jpg";
 import IMG_9275 from "../../assets/gloria_micael/IMG_9275.jpg";
+import outros_1 from "../../assets/gloria_micael/outros_1.png";
 import { type PhotoInfo, WeddingServices } from "../types";
 
 export const gm_IMG_9116_photo: PhotoInfo = {
   src: IMG_9116,
   tags: [WeddingServices.GLORIA_MICAEL],
 };
+
 export const gm_IMG_9109_photo: PhotoInfo = {
   src: IMG_9109,
   tags: [WeddingServices.GLORIA_MICAEL],
 };
+
+export const gm_outros_1_photo: PhotoInfo = {
+  src: outros_1,
+  tags: [WeddingServices.GLORIA_MICAEL, WeddingServices.PAINEIS_BOAS_VINDAS],
+};
+
 export const gm_IMG_9275_photo: PhotoInfo = {
   src: IMG_9275,
   tags: [WeddingServices.GLORIA_MICAEL, WeddingServices.MENUS],
@@ -153,10 +161,12 @@ export const gm_IMG_8736_photo: PhotoInfo = {
 };
 
 export const gloriaMicaelPhotos: PhotoInfo[] = [
-  gm_IMG_9275_photo,
+  gm_IMG_9109_photo,
+  gm_outros_1_photo,
   gm_IMG_9272_photo,
   gm_IMG_9255_photo,
   gm_IMG_9253_photo,
+  gm_IMG_9275_photo,
   gm_IMG_8957_photo,
   gm_IMG_8937_photo,
   gm_IMG_8926_photo,

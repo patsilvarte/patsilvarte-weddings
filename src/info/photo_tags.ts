@@ -21,6 +21,7 @@ import {
   gm_IMG_9255_photo,
   gm_IMG_9272_photo,
   gm_IMG_9275_photo,
+  gm_outros_1_photo,
 } from "./photos/gloria_micael_photo_tags";
 import {
   photosListPatriciaJoao,
@@ -99,6 +100,7 @@ export const allPhotos: PhotoInfo[] = [
   gm_IMG_9255_photo,
   gm_IMG_9272_photo,
   gm_IMG_9275_photo,
+  gm_outros_1_photo,
 ];
 
 export { gloriaMicaelPhotos, photosListPatriciaJoao };
