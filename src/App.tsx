@@ -12,6 +12,7 @@ import {
 import { Homepage } from "./components/Homepage";
 import { Services } from "./components/Services";
 import { Weddings } from "./components/Weddings";
+import { GloriaMicaelWeddingDetails } from "./components/details/GloriaMicaelWeddingDetails";
 import { PatriciaJoaoWeddingDetails } from "./components/details/PatriciaJoaoWeddingDetails";
 import { ServiceDetails } from "./components/details/ServiceDetails";
 import { PageLayout } from "./components/general/PageLayout";
@@ -42,7 +43,7 @@ export const App: FC = () => {
           path="/casamentos/130925-gloria-micael"
           element={
             <PageLayout>
-              <Weddings />
+              <GloriaMicaelWeddingDetails />
             </PageLayout>
           }
         />

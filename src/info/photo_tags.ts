@@ -1,17 +1,14 @@
 import {
   gloriaMicaelPhotos,
   gm_IMG_5073_photo,
-  gm_IMG_5081_photo,
   gm_IMG_8462_photo,
   gm_IMG_8736_photo,
   gm_IMG_8747_photo,
-  gm_IMG_8762_photo,
   gm_IMG_8828_photo,
   gm_IMG_8830_photo,
   gm_IMG_8838_photo,
   gm_IMG_8841_photo,
   gm_IMG_8847_photo,
-  gm_IMG_8851_photo,
   gm_IMG_8853_photo,
   gm_IMG_8854_photo,
   gm_IMG_8861_photo,
@@ -82,17 +79,14 @@ export const allPhotos: PhotoInfo[] = [
   pj_f135_photo,
   pj_f196_photo,
   gm_IMG_5073_photo,
-  gm_IMG_5081_photo,
   gm_IMG_8462_photo,
   gm_IMG_8736_photo,
   gm_IMG_8747_photo,
-  gm_IMG_8762_photo,
   gm_IMG_8828_photo,
   gm_IMG_8830_photo,
   gm_IMG_8838_photo,
   gm_IMG_8841_photo,
   gm_IMG_8847_photo,
-  gm_IMG_8851_photo,
   gm_IMG_8853_photo,
   gm_IMG_8854_photo,
   gm_IMG_8861_photo,
@@ -108,4 +102,3 @@ export const allPhotos: PhotoInfo[] = [
 ];
 
 export { gloriaMicaelPhotos, photosListPatriciaJoao };
-

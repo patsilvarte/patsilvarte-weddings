@@ -1,4 +1,3 @@
-
 import Masonry from "@mui/lab/Masonry";
 import { Box } from "@mui/material";
 import React, { useEffect, useState, type FC } from "react";
@@ -10,7 +9,7 @@ interface PhotoGalleryProps {
   photosList: PhotoInfo[];
 }
 
-export const PhotoGallery:FC<PhotoGalleryProps> = ({ photosList }) => {
+export const PhotoGallery: FC<PhotoGalleryProps> = ({ photosList }) => {
   const [loaded, setLoaded] = useState<Record<number, boolean>>({});
   const [open, setOpen] = React.useState(false);
   const [activeIndex, setActiveIndex] = React.useState<number>(0);
@@ -25,20 +24,22 @@ export const PhotoGallery:FC<PhotoGalleryProps> = ({ photosList }) => {
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (!open) return;
-      if (e.key === "ArrowRight") setActiveIndex((i) => (i + 1) % photosList.length);
-      if (e.key === "ArrowLeft") setActiveIndex((i) => (i - 1 + photosList.length) % photosList.length);
+      if (e.key === "ArrowRight")
+        setActiveIndex((i) => (i + 1) % photosList.length);
+      if (e.key === "ArrowLeft")
+        setActiveIndex((i) => (i - 1 + photosList.length) % photosList.length);
       if (e.key === "Escape") handleClose();
     };
 
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
 
   return (
     <Box className="photo-gallery">
       <Masonry columns={3} spacing={2}>
-      {photosList.map((item, index) => (
+        {photosList.map((item, index) => (
           <div
             key={index}
             className={`photo-gallery__box photo-gallery__box--${
@@ -54,9 +55,9 @@ export const PhotoGallery:FC<PhotoGalleryProps> = ({ photosList }) => {
               className="photo-gallery__image"
             />
           </div>
-      ))}
+        ))}
       </Masonry>
-      <PhotoGalleryDialog 
+      <PhotoGalleryDialog
         open={open}
         handleClose={handleClose}
         photosList={photosList}
@@ -65,4 +66,4 @@ export const PhotoGallery:FC<PhotoGalleryProps> = ({ photosList }) => {
       />
     </Box>
   );
-}
+};
