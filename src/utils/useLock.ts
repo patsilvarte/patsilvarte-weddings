@@ -3,7 +3,6 @@ import { useLocation, useNavigationType } from "react-router-dom";
 import { useScrollLock } from "usehooks-ts";
 
 const SCROLL_UNLOCK_KEY = "homepageScrollUnlockedAt";
-const COOLDOWN_MS = 10 * 60 * 1000; // 10 minutes
 
 export const useLock = () => {
   const { unlock, lock, isLocked } = useScrollLock();
@@ -26,8 +25,7 @@ export const useLock = () => {
       return;
     }
     const lastUnlocked = sessionStorage.getItem(SCROLL_UNLOCK_KEY);
-    const shouldLock =
-      !lastUnlocked || Date.now() - Number(lastUnlocked) > COOLDOWN_MS;
+    const shouldLock = !lastUnlocked;
 
     if (shouldLock) {
       window.scrollTo(0, 0);

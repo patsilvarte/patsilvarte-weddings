@@ -1,0 +1,64 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Hello January Cyrillic Script by Ira Dvilyuk
+ * URL: https://www.myfonts.com/collections/ira-dvilyuk-foundry
+
+ * Webfont: Hello January Cyrillic Regular by Ira Dvilyuk
+ * URL: https://www.myfonts.com/collections/ira-dvilyuk-foundry
+
+ * Webfont: Hello Paris Sans Extra Light by Sans And Sons
+ * URL: https://www.myfonts.com/collections/sans-and-sons-foundry
+
+ * Webfont: Hello Paris Sans Light by Sans And Sons
+ * URL: https://www.myfonts.com/collections/sans-and-sons-foundry
+
+ * Webfont: Hello Paris Sans Regular by Sans And Sons
+ * URL: https://www.myfonts.com/collections/sans-and-sons-foundry
+
+ * Webfont: Hello Paris Sans Medium by Sans And Sons
+ * URL: https://www.myfonts.com/collections/sans-and-sons-foundry
+
+ * Webfont: Hello Paris Sans Bold by Sans And Sons
+ * URL: https://www.myfonts.com/collections/sans-and-sons-foundry
+ 
+ * © 2025 MyFonts Inc. */
+
+
+  
+@font-face {
+  font-family: "HelloParisSansRegular";
+  src: url('webFonts/HelloParisSansRegular/font.woff2') format('woff2'), url('webFonts/HelloParisSansRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "HelloJanuaryCyrillicRegular";
+  src: url('webFonts/HelloJanuaryCyrillicRegular/font.woff2') format('woff2'), url('webFonts/HelloJanuaryCyrillicRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "HelloParisSansExtraLight";
+  src: url('webFonts/HelloParisSansExtraLight/font.woff2') format('woff2'), url('webFonts/HelloParisSansExtraLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "HelloParisSansLight";
+  src: url('webFonts/HelloParisSansLight/font.woff2') format('woff2'), url('webFonts/HelloParisSansLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "HelloJanuaryCyrillicScript";
+  src: url('webFonts/HelloJanuaryCyrillicScript/font.woff2') format('woff2'), url('webFonts/HelloJanuaryCyrillicScript/font.woff') format('woff');
+}
+@font-face {
+  font-family: "HelloParisSansBold";
+  src: url('webFonts/HelloParisSansBold/font.woff2') format('woff2'), url('webFonts/HelloParisSansBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "HelloParisSansMedium";
+  src: url('webFonts/HelloParisSansMedium/font.woff2') format('woff2'), url('webFonts/HelloParisSansMedium/font.woff') format('woff');
+}
+

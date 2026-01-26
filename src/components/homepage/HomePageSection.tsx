@@ -3,8 +3,16 @@ import "./HomePageSection.scss";
 
 interface HomePageSectionProps {
   children: React.ReactNode;
+  ref?: React.Ref<HTMLDivElement> | undefined;
 }
 
-export const HomePageSection: FC<HomePageSectionProps> = ({ children }) => {
-  return <div className="homepage-section">{children}</div>;
+export const HomePageSection: FC<HomePageSectionProps> = ({
+  children,
+  ref,
+}) => {
+  return (
+    <div className="homepage-section" ref={ref}>
+      {children}
+    </div>
+  );
 };

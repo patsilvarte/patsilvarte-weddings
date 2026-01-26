@@ -17,4 +17,33 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+
+  font-family: "Questrial", sans-serif;
+}
+
+.HelloJanuaryCyrillicScript {
+  font-family: HelloJanuaryCyrillicScript !important;
+}
+.HelloJanuaryCyrillicRegular {
+  font-family: HelloJanuaryCyrillicRegular !important;
+}
+.HelloParisSansExtraLight {
+  font-family: HelloParisSansExtraLight !important;
+  line-height: 28px !important;
+}
+.HelloParisSansLight {
+  font-family: HelloParisSansLight !important;
+  line-height: 28px !important;
+}
+.HelloParisSansRegular {
+  font-family: HelloParisSansRegular !important;
+  line-height: 28px !important;
+}
+.HelloParisSansMedium {
+  font-family: HelloParisSansMedium !important;
+  line-height: 28px !important;
+}
+.HelloParisSansBold {
+  font-family: HelloParisSansBold !important;
+  line-height: 28px !important;
 }

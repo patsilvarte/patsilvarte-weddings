@@ -6,8 +6,12 @@ import { PhotoGallery } from "../general/PhotoGallery";
 export const PatriciaJoaoWeddingDetails = () => {
   return (
     <div>
-      <Typography variant="h2">Patrícia e João</Typography>
-      <Typography variant="h6">13.07.2024</Typography>
+      <Typography variant="h2" className="HelloJanuaryCyrillicScript">
+        Patrícia e João
+      </Typography>
+      <Typography variant="h4" className="HelloParisSansRegular">
+        13.07.2024
+      </Typography>
       <PhotoGallery photosList={photosListPatriciaJoao} />
     </div>
   );

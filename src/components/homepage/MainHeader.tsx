@@ -1,7 +1,7 @@
 import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
 import type { FC } from "react";
-import patsilvarteLogoWideWhite from "../assets/Patsilvarte_logo_horizontal_white.svg";
-import photo_patricia_joao_b31 from "../assets/patricia_joao/b_31.jpg";
+import patsilvarteLogoWideWhite from "../../assets/Patsilvarte_logo_horizontal_white.svg";
+import photo_patricia_joao_b31 from "../../assets/patricia_joao/b_31.jpg";
 import "./MainHeader.scss";
 
 interface MainHeaderProps {

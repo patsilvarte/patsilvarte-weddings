@@ -20,13 +20,22 @@ export const ServicesList: FC<ServicesListProps> = ({ exclude_tags = [] }) => {
       className={`services-list ${is_limited ? "services-list--limited" : ""}`}
       id="casamentos"
     >
-      <Typography variant={is_limited ? "h4" : "h3"} gutterBottom>
+      <Typography
+        variant={is_limited ? "h2" : "h1"}
+        gutterBottom
+        className="HelloJanuaryCyrillicScript"
+      >
         {is_limited ? "Outros serviços disponíveis" : "Serviços"}
       </Typography>
       {!is_limited && (
         <div className="services-list__description">
-          <Typography variant="h6" gutterBottom align="center">
-            Descubra os serviços que oferecemos para tornar o seu dia especial
+          <Typography
+            className="HelloParisSansLight"
+            variant="h4"
+            gutterBottom
+            align="center"
+          >
+            descubre os serviços que oferecemos para tornar o vosso dia
             inesquecível.
           </Typography>
         </div>
