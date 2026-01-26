@@ -65,7 +65,7 @@ export const services_list: ServiceInfo[] = [
     cover: "convites.svg",
   },
   {
-    name: "Seating chart",
+    name: "Seating Chart",
     tag: WeddingServices.SEATING_CHART,
     url: "/servicos/seating-chart",
     description:
@@ -73,7 +73,7 @@ export const services_list: ServiceInfo[] = [
     cover: "seating_chart.svg",
   },
   {
-    name: "Paineis de boas vindas",
+    name: "Paineis de Boas Vindas",
     tag: WeddingServices.PAINEIS_BOAS_VINDAS,
     url: "/servicos/paineis-boas-vindas",
     description:
@@ -89,7 +89,7 @@ export const services_list: ServiceInfo[] = [
     cover: "menus.svg",
   },
   {
-    name: "Números de mesa",
+    name: "Números de Mesa",
     tag: WeddingServices.NUMEROS_MESA,
     url: "/servicos/numeros-mesa",
     description:
