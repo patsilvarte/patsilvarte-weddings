@@ -1,6 +1,9 @@
+import gloria_micael_IMG_9109 from "../assets/gloria_micael/IMG_9109.jpg";
 import GM_names_logo from "../assets/gloria_micael/logo-nomes-black.png";
 import photo_patricia_joao_b6 from "../assets/patricia_joao/b_6.jpg";
 import PJ_names_logo from "../assets/patricia_joao/logo-nomes-black.png";
+import sofia_julien_IMG_9783 from "../assets/sofia_julien/IMG_9783.jpg";
+
 import SJ_names_logo from "../assets/sofia_julien/logo-nomes-black.png";
 import { type ServiceInfo, type WeddingInfo, WeddingServices } from "./types";
 
@@ -24,8 +27,9 @@ const casamento_patricia_joao_13_7_24: WeddingInfo = {
 const casamento_gloria_micael_13_9_25: WeddingInfo = {
   name: "Glória e Micael",
   alt: "casamento Glória e Micael",
-  img: photo_patricia_joao_b6,
+  img: gloria_micael_IMG_9109,
   img_hover: GM_names_logo,
+  url: "/casamentos/130925-gloria-micael",
   tags: [
     WeddingServices.CONVITES,
     WeddingServices.SEATING_CHART,
@@ -39,8 +43,9 @@ const casamento_gloria_micael_13_9_25: WeddingInfo = {
 const casamento_sofia_julien_4_10_25: WeddingInfo = {
   name: "Sofia e Julien",
   alt: "casamento Sofia e Julien",
-  img: photo_patricia_joao_b6,
+  img: sofia_julien_IMG_9783,
   img_hover: SJ_names_logo,
+  url: "/casamentos/041025-sofia-julien",
   tags: [WeddingServices.PAINEIS_BOAS_VINDAS],
 };
 
@@ -65,7 +70,7 @@ export const services_list: ServiceInfo[] = [
     cover: "convites.svg",
   },
   {
-    name: "Seating chart",
+    name: "Seating Chart",
     tag: WeddingServices.SEATING_CHART,
     url: "/servicos/seating-chart",
     description:
@@ -73,7 +78,7 @@ export const services_list: ServiceInfo[] = [
     cover: "seating_chart.svg",
   },
   {
-    name: "Paineis de boas vindas",
+    name: "Paineis de Boas Vindas",
     tag: WeddingServices.PAINEIS_BOAS_VINDAS,
     url: "/servicos/paineis-boas-vindas",
     description:
@@ -89,7 +94,7 @@ export const services_list: ServiceInfo[] = [
     cover: "menus.svg",
   },
   {
-    name: "Números de mesa",
+    name: "Números de Mesa",
     tag: WeddingServices.NUMEROS_MESA,
     url: "/servicos/numeros-mesa",
     description:

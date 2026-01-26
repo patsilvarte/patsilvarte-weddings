@@ -28,7 +28,9 @@ export const ServiceDetails: FC<ServiceDetailsProps> = ({ service }) => {
 
   return (
     <div>
-      <Typography variant="h2">{service_data.name}</Typography>
+      <Typography variant="h1" className="HelloJanuaryCyrillicScript">
+        {service_data.name}
+      </Typography>
       <Typography variant="h6">{service_data.description}</Typography>
       <PhotoGallery photosList={photos} />
       <ServicesList exclude_tags={[service]} />

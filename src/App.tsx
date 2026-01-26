@@ -12,8 +12,10 @@ import {
 import { Homepage } from "./components/Homepage";
 import { Services } from "./components/Services";
 import { Weddings } from "./components/Weddings";
+import { GloriaMicaelWeddingDetails } from "./components/details/GloriaMicaelWeddingDetails";
 import { PatriciaJoaoWeddingDetails } from "./components/details/PatriciaJoaoWeddingDetails";
 import { ServiceDetails } from "./components/details/ServiceDetails";
+import { SofiaJulienWeddingDetails } from "./components/details/SofiaJulienWeddingDetails";
 import { PageLayout } from "./components/general/PageLayout";
 import { WeddingServices } from "./info/types";
 
@@ -42,7 +44,7 @@ export const App: FC = () => {
           path="/casamentos/130925-gloria-micael"
           element={
             <PageLayout>
-              <Weddings />
+              <GloriaMicaelWeddingDetails />
             </PageLayout>
           }
         />
@@ -50,7 +52,7 @@ export const App: FC = () => {
           path="/casamentos/041025-sofia-julien"
           element={
             <PageLayout>
-              <Weddings />
+              <SofiaJulienWeddingDetails />
             </PageLayout>
           }
         />
