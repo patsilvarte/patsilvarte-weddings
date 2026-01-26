@@ -18,19 +18,18 @@ export const WeddingsList: FC<WeddingListProps> = ({ isHomepage }) => {
 
   return (
     <div className="weddings-list" id="casamentos">
-      {/* <img
-        src={new URL(`../assets/fonts/casamentos.svg`, import.meta.url).href}
-        alt="Casamentos"
-        className="weddings-list__header-image"
-      /> */}
       <Typography
-        variant="h2"
+        variant="h1"
         gutterBottom
         className="HelloJanuaryCyrillicScript"
       >
         Casamentos
       </Typography>
-      <Typography variant="h5" gutterBottom className="HelloParisSansRegular">
+      <Typography
+        variant="h4"
+        gutterBottom
+        className="HelloParisSansLight weddings-list__subtitle"
+      >
         detalhes sobre o dia especial dos nossos clientes
       </Typography>
 

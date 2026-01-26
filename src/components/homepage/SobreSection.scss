@@ -4,11 +4,38 @@
   align-items: center;
   padding-top: 70px;
   margin: auto;
+  gap: 10px;
 
   &__text {
     flex: 1;
   }
+
+  &__title {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+
+    &--before {
+      margin-bottom: 0px !important;
+      margin-left: -10px !important;
+      font-size: 70px !important;
+    }
+
+    &__highlight {
+      line-height: 28px !important;
+      margin-left: -30px !important;
+    }
+  }
   &__image {
     width: 500px;
+  }
+
+  &__signature {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-style: italic;
   }
 }
