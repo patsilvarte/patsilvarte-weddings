@@ -28,7 +28,7 @@ export const WeddingsList: FC<WeddingListProps> = ({ isHomepage }) => {
       <Typography
         variant="h4"
         gutterBottom
-        className="HelloParisSansLight weddings-list__subtitle"
+        className="HelloParisSansRegular weddings-list__subtitle"
       >
         detalhes sobre o dia especial dos nossos clientes
       </Typography>

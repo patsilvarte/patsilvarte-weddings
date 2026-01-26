@@ -30,7 +30,7 @@ export const ServicesList: FC<ServicesListProps> = ({ exclude_tags = [] }) => {
       {!is_limited && (
         <div className="services-list__description">
           <Typography
-            className="HelloParisSansLight"
+            className="HelloParisSansRegular"
             variant="h4"
             gutterBottom
             align="center"

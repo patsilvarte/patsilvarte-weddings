@@ -25,7 +25,7 @@ export const Homepage: FC = () => {
       <HomePageSection ref={firstSection}>
         <WeddingsList isHomepage />
       </HomePageSection>
-      <HomePageSection>
+      <HomePageSection darkBackground>
         <ServicesList />
       </HomePageSection>
       <HomePageSection>
