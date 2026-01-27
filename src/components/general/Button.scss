@@ -28,4 +28,15 @@
       color: #d7dcbc;
     }
   }
+
+  &--form {
+    width: 100%;
+    justify-content: center;
+    background-color: #535931;
+    color: #d7dcbc;
+    &:hover {
+      background-color: #d7dcbc;
+      color: #535931;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import { useRef, type FC } from "react";
 import { smoothScrollTo } from "../utils/smoothScrollTo";
 import { useLock } from "../utils/useLock";
+import { ContactForm } from "./ContactForm";
 import { Navbar } from "./general/Navbar";
 import { HomePageSection } from "./homepage/HomePageSection";
 import { MainHeader } from "./homepage/MainHeader";
@@ -30,6 +31,9 @@ export const Homepage: FC = () => {
       </HomePageSection>
       <HomePageSection>
         <SobreSection />
+      </HomePageSection>
+      <HomePageSection darkBackground>
+        <ContactForm />
       </HomePageSection>
     </div>
   );
