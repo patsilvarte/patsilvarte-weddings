@@ -1,4 +1,4 @@
-import { ServicesList } from "./ServicesList";
+import { ServicesList } from "../ServicesList";
 
 export const Services = () => {
   return (

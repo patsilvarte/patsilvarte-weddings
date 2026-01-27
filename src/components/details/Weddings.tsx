@@ -1,4 +1,4 @@
-import { WeddingsList } from "./WeddingsList";
+import { WeddingsList } from "../WeddingsList";
 
 export const Weddings = () => {
   return (
