@@ -33,7 +33,9 @@ export const Navbar: FC<NavbarProps> = ({ visible = true }) => {
           src={patsilvarteLogoWideWhite}
         />
         <div className="navbar__right">
-          <Button variant="navigation">Contactos</Button>
+          <Button variant="navigation" onClick={() => navigate("/contactos")}>
+            Contactos
+          </Button>
         </div>
       </div>
     </div>

@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    background-color: #535931;
+    color: #d7dcbc;
+    padding: 20px 40px 10px 40px;
+  }
+
+  .socials {
+    margin-bottom: 10px;
+  }
+  .socials__button {
+    color: #d7dcbc;
+  }
+}

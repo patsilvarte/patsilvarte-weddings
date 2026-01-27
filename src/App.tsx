@@ -10,12 +10,13 @@ import {
   Routes,
 } from "react-router-dom";
 import { Homepage } from "./components/Homepage";
-import { Services } from "./components/Services";
-import { Weddings } from "./components/Weddings";
+import { Contacts } from "./components/details/Contacts";
 import { GloriaMicaelWeddingDetails } from "./components/details/GloriaMicaelWeddingDetails";
 import { PatriciaJoaoWeddingDetails } from "./components/details/PatriciaJoaoWeddingDetails";
 import { ServiceDetails } from "./components/details/ServiceDetails";
+import { Services } from "./components/details/Services";
 import { SofiaJulienWeddingDetails } from "./components/details/SofiaJulienWeddingDetails";
+import { Weddings } from "./components/details/Weddings";
 import { PageLayout } from "./components/general/PageLayout";
 import { WeddingServices } from "./info/types";
 
@@ -24,6 +25,14 @@ export const App: FC = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route
+          path="/contactos"
+          element={
+            <PageLayout>
+              <Contacts />
+            </PageLayout>
+          }
+        />
         <Route
           path="/casamentos"
           element={

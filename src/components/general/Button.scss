@@ -28,4 +28,20 @@
       color: #d7dcbc;
     }
   }
+
+  &--form {
+    width: 100%;
+    justify-content: center;
+    background-color: #535931;
+    color: #d7dcbc;
+    &:hover {
+      background-color: #d7dcbc;
+      color: #535931;
+    }
+    &:disabled {
+      background-color: #a0a57a;
+      color: #f0f1e8;
+      cursor: not-allowed;
+    }
+  }
 }

@@ -35,7 +35,7 @@ export const ServicesList: FC<ServicesListProps> = ({ exclude_tags = [] }) => {
             gutterBottom
             align="center"
           >
-            descubre os serviços que oferecemos para tornar o vosso dia
+            descobre os serviços que oferecemos para tornar o vosso dia
             inesquecível.
           </Typography>
         </div>
