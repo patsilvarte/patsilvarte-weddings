@@ -14,10 +14,9 @@
   }
 
   &__user-info {
-    display: flex;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
-    align-items: center;
 
     &--half {
       flex: 1;

@@ -4,7 +4,7 @@ import {
     Box,
     CircularProgress,
     MenuItem,
-    TextField
+    TextField,
 } from "@mui/material";
 import { useState } from "react";
 import { WeddingServices } from "../info/types";
@@ -110,6 +110,18 @@ export const ContactForm = () => {
             required
             error={!!errors.email}
             helperText={errors.email}
+            className="contact-form__user-info--half"
+            disabled={loading}
+          />
+          <TextField
+            name="phone"
+            label="Telefone"
+            className="contact-form__user-info--half"
+            disabled={loading}
+          />
+          <TextField
+            name="location"
+            label="Localização"
             className="contact-form__user-info--half"
             disabled={loading}
           />
