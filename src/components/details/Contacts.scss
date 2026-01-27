@@ -1,26 +1,16 @@
-.contact-form {
+.contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  text-align: left;
 
-  &__box {
+  &__description {
     max-width: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-  }
-
-  &__user-info {
-    display: flex;
-    justify-content: stretch;
-    gap: 16px;
     align-items: center;
-
-    &--half {
-      flex: 1;
-    }
+    margin-bottom: 30px;
+    gap: 16px;
   }
 }

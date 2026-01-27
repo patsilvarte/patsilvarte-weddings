@@ -4,8 +4,7 @@ import {
     Box,
     CircularProgress,
     MenuItem,
-    TextField,
-    Typography,
+    TextField
 } from "@mui/material";
 import { useState } from "react";
 import { WeddingServices } from "../info/types";
@@ -87,14 +86,6 @@ export const ContactForm = () => {
 
   return (
     <div className="contact-form">
-      <Typography
-        variant="h1"
-        gutterBottom
-        className="HelloJanuaryCyrillicScript"
-      >
-        Como te podemos ajudar?
-      </Typography>
-
       <Box
         component="form"
         onSubmit={handleSubmit}
