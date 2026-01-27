@@ -1,38 +1,49 @@
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { IconButton, Stack, Typography } from "@mui/material";
+import { Link, Stack, Typography } from "@mui/material";
 import "./SocialContacts.scss";
 
-export const SocialContacts = () => {
+interface SocialContactsProps {
+  vertical?: boolean;
+}
+
+export const SocialContacts = ({ vertical }: SocialContactsProps) => {
   return (
-    <Stack direction="row" spacing={4} alignItems="center" className="socials">
-      <IconButton
+    <Stack
+      direction={vertical ? "column" : "row"}
+      spacing={vertical ? 1 : 4}
+      alignItems={vertical ? "start" : "center"}
+      className="socials"
+    >
+      <Link
         component="a"
         href={"https://www.instagram.com/patsilvarte.weddings/"}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
         className="socials__button"
-        disableRipple
+        underline="hover"
+        color="inherit"
       >
-        <InstagramIcon fontSize="medium" />
-        <Typography variant="body1" align="center">
+        <InstagramIcon fontSize="small" />
+        <Typography variant="body2" align="center">
           @patsilvarte.weddings
         </Typography>
-      </IconButton>
+      </Link>
 
-      <IconButton
+      <Link
         component="a"
         href="mailto:patsilvarte.weddings.info@gmail.com"
         aria-label="Enviar email"
         className="socials__button"
-        disableRipple
+        underline="hover"
+        color="inherit"
       >
-        <EmailIcon fontSize="medium" />
-        <Typography variant="body1" align="center">
+        <EmailIcon fontSize="small" />
+        <Typography variant="body2" align="center">
           patsilvarte.weddings.info@gmail.com
         </Typography>
-      </IconButton>
+      </Link>
     </Stack>
   );
 };
