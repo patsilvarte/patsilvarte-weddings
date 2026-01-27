@@ -38,5 +38,10 @@
       background-color: #d7dcbc;
       color: #535931;
     }
+    &:disabled {
+      background-color: #a0a57a;
+      color: #f0f1e8;
+      cursor: not-allowed;
+    }
   }
 }

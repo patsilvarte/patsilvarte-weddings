@@ -1,5 +1,12 @@
 import emailjs from "@emailjs/browser";
-import { Alert, Box, MenuItem, TextField, Typography } from "@mui/material";
+import {
+    Alert,
+    Box,
+    CircularProgress,
+    MenuItem,
+    TextField,
+    Typography,
+} from "@mui/material";
 import { useState } from "react";
 import { WeddingServices } from "../info/types";
 import "./ContactForm.scss";
@@ -15,6 +22,7 @@ type Errors = {
 export const ContactForm = () => {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [errors, setErrors] = useState<Errors>({});
+  const [loading, setLoading] = useState(false);
 
   const validate = (form: HTMLFormElement) => {
     const newErrors: Errors = {};
@@ -49,6 +57,8 @@ export const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (loading) return;
+
     setStatus("idle");
 
     const form = e.currentTarget;
@@ -56,17 +66,22 @@ export const ContactForm = () => {
     if (!validate(form)) return;
 
     try {
+      setLoading(true);
+
       await emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       );
+
       form.reset();
       setErrors({});
       setStatus("success");
     } catch {
       setStatus("error");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -94,6 +109,7 @@ export const ContactForm = () => {
             error={!!errors.name}
             helperText={errors.name}
             className="contact-form__user-info--half"
+            disabled={loading}
           />
 
           <TextField
@@ -104,6 +120,7 @@ export const ContactForm = () => {
             error={!!errors.email}
             helperText={errors.email}
             className="contact-form__user-info--half"
+            disabled={loading}
           />
         </div>
 
@@ -116,6 +133,7 @@ export const ContactForm = () => {
           defaultValue={WeddingServices.CONVITES}
           error={!!errors.contact_type}
           helperText={errors.contact_type}
+          disabled={loading}
         >
           <MenuItem value={WeddingServices.CONVITES}>
             {WeddingServices.CONVITES}
@@ -153,15 +171,27 @@ export const ContactForm = () => {
           required
           error={!!errors.message}
           helperText={errors.message}
+          disabled={loading}
         />
 
-        <Button type="submit" variant="form" className="contact-form__submit">
-          Enviar mensagem
+        <Button
+          disabled={loading}
+          type="submit"
+          variant="form"
+          className="contact-form__submit"
+        >
+          {loading ? (
+            <>
+              <CircularProgress size={18} sx={{ mr: 1 }} />A enviar...
+            </>
+          ) : (
+            "Enviar mensagem"
+          )}
         </Button>
 
         {status === "success" && (
           <Alert severity="success" sx={{ mt: 2 }}>
-            Mensagem enviada com sucesso 💌 Iremos responder o mais breve
+            Mensagem enviada com sucesso. Iremos responder o mais breve
             possível.
           </Alert>
         )}
