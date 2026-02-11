@@ -12,10 +12,17 @@
     background-color: #535931;
     color: #d7dcbc;
     padding: 20px 40px 10px 40px;
+
+    @media (max-width: 600px) {
+      padding: 20px 30px;
+    }
   }
 
   .socials {
     margin-bottom: 10px;
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
   .socials__button {
     color: #d7dcbc;

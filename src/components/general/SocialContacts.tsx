@@ -1,6 +1,7 @@
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { Link, Stack, Typography } from "@mui/material";
+import { Link, Stack, Typography, useMediaQuery } from "@mui/material";
+import theme from "../../theme";
 import "./SocialContacts.scss";
 
 interface SocialContactsProps {
@@ -8,11 +9,13 @@ interface SocialContactsProps {
 }
 
 export const SocialContacts = ({ vertical }: SocialContactsProps) => {
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Stack
-      direction={vertical ? "column" : "row"}
-      spacing={vertical ? 1 : 4}
-      alignItems={vertical ? "start" : "center"}
+      direction={isMobile || vertical ? "column" : "row"}
+      spacing={isMobile || vertical ? 1 : 4}
+      alignItems={vertical && !isMobile ? "start" : "center"}
       className="socials"
     >
       <Link

@@ -1,12 +1,15 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
+import theme from "../../theme";
 import "./Footer.scss";
 import { SocialContacts } from "./SocialContacts";
 
 export const Footer = () => {
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <footer className="footer">
       <div className="footer__container">
-        <Typography variant="subtitle1" align="left">
+        <Typography variant="subtitle1" align={isMobile ? "center" : "left"}>
           Contactos
         </Typography>
         <SocialContacts vertical />
