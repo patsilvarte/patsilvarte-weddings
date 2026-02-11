@@ -39,8 +39,8 @@ export const SobreSection = () => {
           especial aos detalhes que fazem a diferença.
         </Typography>
 
-        <Typography variant="body2" className="about-section__signature">
-          —
+        <div className="about-section__signature">
+          <Typography variant="body2">—</Typography>
           <Typography
             variant="h3"
             gutterBottom
@@ -48,7 +48,7 @@ export const SobreSection = () => {
           >
             Patrícia Silva Fernandes
           </Typography>
-        </Typography>
+        </div>
       </div>
       <img
         alt="Patsilvarte Weddings founder Patricia Silva Fernandes"

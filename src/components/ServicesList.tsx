@@ -45,7 +45,7 @@ export const ServicesList: FC<ServicesListProps> = ({ exclude_tags = [] }) => {
         className={`services-list__container ${is_limited ? "services-list__container--limited" : ""}`}
       >
         {filteredServices.map((info) => (
-          <ServiceListOption info={info} small={is_limited} />
+          <ServiceListOption key={info.tag} info={info} small={is_limited} />
         ))}
       </div>
     </div>
