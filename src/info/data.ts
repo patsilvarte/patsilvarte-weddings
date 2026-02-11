@@ -7,7 +7,7 @@ import sofia_julien_IMG_9783 from "../assets/sofia_julien/IMG_9783.jpg";
 import SJ_names_logo from "../assets/sofia_julien/logo-nomes-black.png";
 import { type ServiceInfo, type WeddingInfo, WeddingServices } from "./types";
 
-const casamento_patricia_joao_13_7_24: WeddingInfo = {
+export const casamento_patricia_joao_13_7_24: WeddingInfo = {
   name: "Patrícia e João",
   alt: "casamento Patrícia e João",
   img: photo_patricia_joao_b6,
@@ -24,7 +24,7 @@ const casamento_patricia_joao_13_7_24: WeddingInfo = {
   ],
 };
 
-const casamento_gloria_micael_13_9_25: WeddingInfo = {
+export const casamento_gloria_micael_13_9_25: WeddingInfo = {
   name: "Glória e Micael",
   alt: "casamento Glória e Micael",
   img: gloria_micael_IMG_9109,
@@ -42,7 +42,7 @@ const casamento_gloria_micael_13_9_25: WeddingInfo = {
     WeddingServices.LEMBRANÇAS,
   ],
 };
-const casamento_sofia_julien_4_10_25: WeddingInfo = {
+export const casamento_sofia_julien_4_10_25: WeddingInfo = {
   name: "Sofia e Julien",
   alt: "casamento Sofia e Julien",
   img: sofia_julien_IMG_9783,

@@ -6,10 +6,10 @@ import { Footer } from "./general/Footer";
 import { Navbar } from "./general/Navbar";
 import { HomePageSection } from "./homepage/HomePageSection";
 import { MainHeader } from "./homepage/MainHeader";
+import { ReviewsSection } from "./homepage/ReviewsSection";
 import { SobreSection } from "./homepage/SobreSection";
 import { ServicesList } from "./ServicesList";
 import { WeddingsList } from "./WeddingsList";
-import { WeddingReviews } from "./WeddingsReviews";
 
 export const Homepage: FC = () => {
   const firstSection = useRef<HTMLDivElement | null>(null);
@@ -38,7 +38,7 @@ export const Homepage: FC = () => {
         <Contacts />
       </HomePageSection>
       <HomePageSection>
-        <WeddingReviews />
+        <ReviewsSection />
       </HomePageSection>
       <Footer />
     </div>

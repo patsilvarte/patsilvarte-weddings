@@ -1,9 +1,9 @@
 import { Typography } from "@mui/material";
 
-import {
-  gloriaMicaelPhotos
-} from "../../info/photo_tags";
+import { casamento_gloria_micael_13_9_25 } from "../../info/data";
+import { gloriaMicaelPhotos } from "../../info/photo_tags";
 import { PhotoGallery } from "../general/PhotoGallery";
+import { WeddingReview } from "./WeddingReview";
 
 export const GloriaMicaelWeddingDetails = () => {
   return (
@@ -15,6 +15,7 @@ export const GloriaMicaelWeddingDetails = () => {
         13.09.2025
       </Typography>
       <PhotoGallery photosList={gloriaMicaelPhotos} />
+      <WeddingReview weddingInfo={casamento_gloria_micael_13_9_25} />
     </div>
   );
 };
