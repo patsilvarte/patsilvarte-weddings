@@ -5,6 +5,7 @@ export type WeddingInfo = {
   img_hover?: string;
   alt: string;
   url?: string;
+  review?: string;
 };
 
 export type ServiceInfo = {
