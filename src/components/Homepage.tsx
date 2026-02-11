@@ -25,6 +25,9 @@ export const Homepage: FC = () => {
     <div className="homepage" id="homepage">
       <Navbar visible={!isLocked} />
       <MainHeader visibleHeader={!isLocked} setHeaderVisible={showWebsite} />
+      <HomePageSection darkBackground>
+        <SobreSection />
+      </HomePageSection>
       <HomePageSection ref={firstSection}>
         <WeddingsList isHomepage />
       </HomePageSection>
@@ -32,14 +35,12 @@ export const Homepage: FC = () => {
         <ServicesList />
       </HomePageSection>
       <HomePageSection>
-        <SobreSection />
+        <ReviewsSection />
       </HomePageSection>
       <HomePageSection darkBackground>
         <Contacts />
       </HomePageSection>
-      <HomePageSection>
-        <ReviewsSection />
-      </HomePageSection>
+
       <Footer />
     </div>
   );

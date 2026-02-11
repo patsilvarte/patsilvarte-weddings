@@ -2,6 +2,7 @@ import IMG_9783 from "../../assets/sofia_julien/IMG_9783.jpg";
 import IMG_9785 from "../../assets/sofia_julien/IMG_9785.jpg";
 import IMG_9799 from "../../assets/sofia_julien/IMG_9799.jpg";
 import IMG_9804 from "../../assets/sofia_julien/IMG_9804.jpg";
+import placas_setas_dia from "../../assets/sofia_julien/placas-setas-dia.jpg";
 import { type PhotoInfo, WeddingServices } from "../types";
 
 export const sj_IMG_9783_photo: PhotoInfo = {
@@ -31,10 +32,15 @@ export const sj_IMG_9804_photo: PhotoInfo = {
   src: IMG_9804,
   tags: [WeddingServices.SOFIA_JULIEN],
 };
+export const sj_placas_setas_dia_photo: PhotoInfo = {
+  src: placas_setas_dia,
+  tags: [WeddingServices.SOFIA_JULIEN, WeddingServices.PAINEIS_BOAS_VINDAS],
+};
 
 export const sofiaJulienPhotos: PhotoInfo[] = [
   sj_IMG_9783_photo,
   sj_IMG_9785_photo,
   sj_IMG_9799_photo,
   sj_IMG_9804_photo,
+  sj_placas_setas_dia_photo,
 ];
