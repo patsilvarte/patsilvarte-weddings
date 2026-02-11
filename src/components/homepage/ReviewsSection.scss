@@ -1,0 +1,50 @@
+.wedding-reviews {
+  overflow: hidden;
+  padding: 0 45px 0 28px;
+
+  .swiper {
+    overflow: visible;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000;
+    position: absolute;
+  }
+  .swiper-button-prev {
+    left: -35px !important;
+  }
+  .swiper-button-next {
+    right: -55px !important;
+  }
+  .swiper-slide {
+    margin-right: 40px !important;
+  }
+
+  .swiper-pagination {
+    padding-left: 10px;
+  }
+  .swiper-pagination-bullet {
+    background: #000;
+    opacity: 0.4;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .wedding-reviews {
+    padding: 0;
+    .swiper {
+      overflow: hidden;
+    }
+    .swiper-slide {
+      margin-right: 30px !important;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}
