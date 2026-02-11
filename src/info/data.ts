@@ -61,6 +61,11 @@ export const full_weddings_list: WeddingInfo[] = [
   casamento_gloria_micael_13_9_25,
   casamento_sofia_julien_4_10_25,
 ];
+export const reviews_weddings_list: WeddingInfo[] = [
+  casamento_patricia_joao_13_7_24,
+  casamento_gloria_micael_13_9_25,
+  casamento_sofia_julien_4_10_25,
+];
 
 export const services_list: ServiceInfo[] = [
   {

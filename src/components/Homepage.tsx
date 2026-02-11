@@ -9,6 +9,7 @@ import { MainHeader } from "./homepage/MainHeader";
 import { SobreSection } from "./homepage/SobreSection";
 import { ServicesList } from "./ServicesList";
 import { WeddingsList } from "./WeddingsList";
+import { WeddingReviews } from "./WeddingsReviews";
 
 export const Homepage: FC = () => {
   const firstSection = useRef<HTMLDivElement | null>(null);
@@ -35,6 +36,9 @@ export const Homepage: FC = () => {
       </HomePageSection>
       <HomePageSection darkBackground>
         <Contacts />
+      </HomePageSection>
+      <HomePageSection>
+        <WeddingReviews />
       </HomePageSection>
       <Footer />
     </div>

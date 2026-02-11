@@ -13,29 +13,6 @@ export const SobreSection = () => {
         >
           Sobre
         </Typography>
-        {/* <Typography
-          variant="h2"
-          gutterBottom
-          className="HelloJanuaryCyrillicScript about-section__title--before"
-        >
-          Por detrás do
-        </Typography>
-        <div className="about-section__title">
-          <Typography
-            variant="h4"
-            gutterBottom
-            className="HelloParisSansRegular"
-          >
-            patsilvarte
-          </Typography>
-          <Typography
-            variant="h2"
-            gutterBottom
-            className="HelloJanuaryCyrillicScript about-section__title__highlight"
-          >
-            weddings
-          </Typography>
-        </div> */}
         <Typography variant="body1" gutterBottom>
           O Patsilvarte Weddings nasceu da vontade de transformar histórias
           reais em detalhes com significado.
