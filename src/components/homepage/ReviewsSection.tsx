@@ -30,7 +30,7 @@ export const ReviewsSection = () => {
         keyboard
         effect="fade"
         pagination={{ clickable: true }}
-        spaceBetween={40}
+        spaceBetween={60}
         slidesPerView={1}
         breakpoints={{
           900: {
