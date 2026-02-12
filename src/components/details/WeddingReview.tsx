@@ -1,6 +1,6 @@
-import { Typography } from "@mui/material";
 import type { WeddingInfo } from "../../info/types";
 import { ReviewCard } from "../general/ReviewCard";
+import { Title } from "../general/Title";
 
 interface WeddingReviewProps {
   weddingInfo: WeddingInfo;
@@ -9,13 +9,7 @@ interface WeddingReviewProps {
 export const WeddingReview = ({ weddingInfo }: WeddingReviewProps) => {
   return (
     <div style={{ margin: "80px 0" }}>
-      <Typography
-        variant="h2"
-        gutterBottom
-        className="HelloJanuaryCyrillicScript"
-      >
-        O Feedback que recebemos
-      </Typography>
+      <Title isSecondary title=" O Feedback que recebemos" />
       <ReviewCard
         isWeddingPage
         name={weddingInfo.name}

@@ -1,10 +1,10 @@
 import { Button } from "./general/Button";
 import { WeddingListCard } from "./WeddingListCard";
 
-import { Typography } from "@mui/material";
 import type { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import { full_weddings_list, highlight_weddings_list } from "../info/data";
+import { SubTitle, Title } from "./general/Title";
 import "./WeddingsList.scss";
 
 interface WeddingListProps {
@@ -18,20 +18,11 @@ export const WeddingsList: FC<WeddingListProps> = ({ isHomepage }) => {
 
   return (
     <div className="weddings-list" id="casamentos">
-      <Typography
-        variant="h1"
-        gutterBottom
-        className="HelloJanuaryCyrillicScript"
-      >
-        Casamentos
-      </Typography>
-      <Typography
-        variant="h4"
-        gutterBottom
-        className="HelloParisSansRegular weddings-list__subtitle"
-      >
-        detalhes sobre o dia especial dos nossos clientes
-      </Typography>
+      <Title title="Casamentos" />
+      <SubTitle
+        title="detalhes sobre o dia especial dos nossos clientes"
+        className="weddings-list__subtitle"
+      />
 
       <div className="weddings-list__container">
         {finalList.map((info) => (

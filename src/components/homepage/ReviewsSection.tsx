@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
@@ -15,6 +15,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { reviews_weddings_list } from "../../info/data";
 import { ReviewCard } from "../general/ReviewCard";
+import { Title } from "../general/Title";
 import "./ReviewsSection.scss";
 
 export const ReviewsSection = () => {
@@ -22,14 +23,7 @@ export const ReviewsSection = () => {
 
   return (
     <Box className="wedding-reviews">
-      <Typography
-        variant="h1"
-        gutterBottom
-        className="HelloJanuaryCyrillicScript"
-      >
-        O que dizem os nossos noivos
-      </Typography>
-
+      <Title title="O que dizem os nossos noivos" />
       <Swiper
         modules={[Navigation, Pagination]}
         navigation

@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
 
 import type { FC } from "react";
 import { services_list } from "../info/data";
 import { ServiceListOption } from "./ServiceListOption";
 import "./ServicesList.scss";
+import { SubTitle, Title } from "./general/Title";
 
 interface ServicesListProps {
   exclude_tags?: string[];
@@ -20,24 +20,13 @@ export const ServicesList: FC<ServicesListProps> = ({ exclude_tags = [] }) => {
       className={`services-list ${is_limited ? "services-list--limited" : ""}`}
       id="casamentos"
     >
-      <Typography
-        variant={is_limited ? "h2" : "h1"}
-        gutterBottom
-        className="HelloJanuaryCyrillicScript"
-      >
-        {is_limited ? "Outros serviços disponíveis" : "Serviços"}
-      </Typography>
+      <Title
+        isSecondary={is_limited}
+        title={is_limited ? "Outros serviços disponíveis" : "Serviços"}
+      />
       {!is_limited && (
         <div className="services-list__description">
-          <Typography
-            className="HelloParisSansRegular"
-            variant="h4"
-            gutterBottom
-            align="center"
-          >
-            descobre os serviços que oferecemos para tornar o vosso dia
-            inesquecível.
-          </Typography>
+          <SubTitle title="descobre os serviços que oferecemos para tornar o vosso dia inesquecível." />
         </div>
       )}
 
