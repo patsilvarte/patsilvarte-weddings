@@ -1,13 +1,6 @@
 import { Box } from "@mui/material";
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import "swiper/css";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import "swiper/css/navigation";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import "swiper/css/pagination";
 
 import { Keyboard, Navigation, Pagination } from "swiper/modules";
