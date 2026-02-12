@@ -25,14 +25,14 @@ export const Homepage: FC = () => {
     <div className="homepage" id="homepage">
       <Navbar visible={!isLocked} />
       <MainHeader visibleHeader={!isLocked} setHeaderVisible={showWebsite} />
-      <HomePageSection darkBackground>
-        <SobreSection />
+      <HomePageSection darkBackground ref={firstSection}>
+        <ServicesList />
       </HomePageSection>
-      <HomePageSection ref={firstSection}>
+      <HomePageSection>
         <WeddingsList isHomepage />
       </HomePageSection>
       <HomePageSection darkBackground>
-        <ServicesList />
+        <SobreSection />
       </HomePageSection>
       <HomePageSection>
         <ReviewsSection />
