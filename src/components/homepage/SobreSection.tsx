@@ -1,8 +1,10 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import patsilvarteAboutmePhoto from "../../assets/Patsilvart_me_photo.png";
 import "./SobreSection.scss";
 
 export const SobreSection = () => {
+  const isMobile = !useMediaQuery("(min-width:900px)");
+
   return (
     <div className="about-section">
       <div className="about-section__text">
@@ -13,6 +15,13 @@ export const SobreSection = () => {
         >
           Sobre
         </Typography>
+        {isMobile && (
+          <img
+            alt="Patsilvarte Weddings founder Patricia Silva Fernandes"
+            className="about-section__image"
+            src={patsilvarteAboutmePhoto}
+          />
+        )}
         <Typography variant="body1" gutterBottom>
           O Patsilvarte Weddings nasceu da vontade de transformar histórias
           reais em detalhes com significado.
@@ -42,7 +51,7 @@ export const SobreSection = () => {
         <div className="about-section__signature">
           <Typography variant="body2">—</Typography>
           <Typography
-            variant="h3"
+            variant={isMobile ? "h4" : "h3"}
             gutterBottom
             className="HelloJanuaryCyrillicScript"
           >
@@ -50,11 +59,13 @@ export const SobreSection = () => {
           </Typography>
         </div>
       </div>
-      <img
-        alt="Patsilvarte Weddings founder Patricia Silva Fernandes"
-        className="about-section__image"
-        src={patsilvarteAboutmePhoto}
-      />
+      {!isMobile && (
+        <img
+          alt="Patsilvarte Weddings founder Patricia Silva Fernandes"
+          className="about-section__image"
+          src={patsilvarteAboutmePhoto}
+        />
+      )}
     </div>
   );
 };
