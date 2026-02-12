@@ -7,7 +7,7 @@ import sofia_julien_IMG_9783 from "../assets/sofia_julien/IMG_9783.jpg";
 import SJ_names_logo from "../assets/sofia_julien/logo-nomes-black.png";
 import { type ServiceInfo, type WeddingInfo, WeddingServices } from "./types";
 
-const casamento_patricia_joao_13_7_24: WeddingInfo = {
+export const casamento_patricia_joao_13_7_24: WeddingInfo = {
   name: "Patrícia e João",
   alt: "casamento Patrícia e João",
   img: photo_patricia_joao_b6,
@@ -22,14 +22,18 @@ const casamento_patricia_joao_13_7_24: WeddingInfo = {
     WeddingServices.ALUGUER,
     WeddingServices.LEMBRANÇAS,
   ],
+  review:
+    "Patrícia, não tenho palavras para expressar o quanto estou agradecida pelo trabalho incrível no nosso casamento! Desde os convites até às lembranças, tudo foi feito com carinho e atenção ao detalhe. As tuas ideias criativas e essa capacidade de entender exatamente o que queríamos foram fundamentais para tornar o nosso dia ainda mais especial. Foste um ombro amigo, sempre disponível para ouvir e aconselhar. Recomendo os serviços da Patrícia a todas as noivas que procuram alguém que não faça apenas um trabalho excelente, mas que também seja uma parceira em todo o processo.",
 };
 
-const casamento_gloria_micael_13_9_25: WeddingInfo = {
+export const casamento_gloria_micael_13_9_25: WeddingInfo = {
   name: "Glória e Micael",
   alt: "casamento Glória e Micael",
   img: gloria_micael_IMG_9109,
   img_hover: GM_names_logo,
   url: "/casamentos/130925-gloria-micael",
+  review:
+    "Patrícia, não tenho palavras para expressar o quanto estou agradecida pelo trabalho incrível no nosso casamento! Desde os convites até às lembranças, tudo foi feito com carinho e atenção ao detalhe. As tuas ideias criativas e essa capacidade de entender exatamente o que queríamos foram fundamentais para tornar o nosso dia ainda mais especial. Foste um ombro amigo, sempre disponível para ouvir e aconselhar. Recomendo os serviços da Patrícia a todas as noivas que procuram alguém que não faça apenas um trabalho excelente, mas que também seja uma parceira em todo o processo.",
   tags: [
     WeddingServices.CONVITES,
     WeddingServices.SEATING_CHART,
@@ -40,13 +44,15 @@ const casamento_gloria_micael_13_9_25: WeddingInfo = {
     WeddingServices.LEMBRANÇAS,
   ],
 };
-const casamento_sofia_julien_4_10_25: WeddingInfo = {
+export const casamento_sofia_julien_4_10_25: WeddingInfo = {
   name: "Sofia e Julien",
   alt: "casamento Sofia e Julien",
   img: sofia_julien_IMG_9783,
   img_hover: SJ_names_logo,
   url: "/casamentos/041025-sofia-julien",
   tags: [WeddingServices.PAINEIS_BOAS_VINDAS],
+  review:
+    "Patrícia, não tenho palavras para expressar o quanto estou agradecida pelo trabalho incrível no nosso casamento! Desde os convites até às lembranças, tudo foi feito com carinho e atenção ao detalhe. As tuas ideias criativas e essa capacidade de entender exatamente o que queríamos foram fundamentais para tornar o nosso dia ainda mais especial. Foste um ombro amigo, sempre disponível para ouvir e aconselhar. Recomendo os serviços da Patrícia a todas as noivas que procuram alguém que não faça apenas um trabalho excelente, mas que também seja uma parceira em todo o processo.",
 };
 
 export const highlight_weddings_list: WeddingInfo[] = [
@@ -55,6 +61,11 @@ export const highlight_weddings_list: WeddingInfo[] = [
   casamento_sofia_julien_4_10_25,
 ];
 export const full_weddings_list: WeddingInfo[] = [
+  casamento_patricia_joao_13_7_24,
+  casamento_gloria_micael_13_9_25,
+  casamento_sofia_julien_4_10_25,
+];
+export const reviews_weddings_list: WeddingInfo[] = [
   casamento_patricia_joao_13_7_24,
   casamento_gloria_micael_13_9_25,
   casamento_sofia_julien_4_10_25,

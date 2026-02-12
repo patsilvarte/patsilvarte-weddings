@@ -56,6 +56,7 @@ import {
   sj_IMG_9785_photo,
   sj_IMG_9799_photo,
   sj_IMG_9804_photo,
+  sj_placas_setas_dia_photo,
   sofiaJulienPhotos,
 } from "./photos/sofia_julien_photo_tags";
 import type { PhotoInfo } from "./types";
@@ -112,6 +113,7 @@ export const allPhotos: PhotoInfo[] = [
   sj_IMG_9785_photo,
   sj_IMG_9799_photo,
   sj_IMG_9804_photo,
+  sj_placas_setas_dia_photo,
 ];
 
 export { gloriaMicaelPhotos, photosListPatriciaJoao, sofiaJulienPhotos };

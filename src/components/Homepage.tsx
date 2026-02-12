@@ -6,6 +6,7 @@ import { Footer } from "./general/Footer";
 import { Navbar } from "./general/Navbar";
 import { HomePageSection } from "./homepage/HomePageSection";
 import { MainHeader } from "./homepage/MainHeader";
+import { ReviewsSection } from "./homepage/ReviewsSection";
 import { SobreSection } from "./homepage/SobreSection";
 import { ServicesList } from "./ServicesList";
 import { WeddingsList } from "./WeddingsList";
@@ -24,6 +25,9 @@ export const Homepage: FC = () => {
     <div className="homepage" id="homepage">
       <Navbar visible={!isLocked} />
       <MainHeader visibleHeader={!isLocked} setHeaderVisible={showWebsite} />
+      <HomePageSection darkBackground>
+        <SobreSection />
+      </HomePageSection>
       <HomePageSection ref={firstSection}>
         <WeddingsList isHomepage />
       </HomePageSection>
@@ -31,11 +35,12 @@ export const Homepage: FC = () => {
         <ServicesList />
       </HomePageSection>
       <HomePageSection>
-        <SobreSection />
+        <ReviewsSection />
       </HomePageSection>
       <HomePageSection darkBackground>
         <Contacts />
       </HomePageSection>
+
       <Footer />
     </div>
   );
