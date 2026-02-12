@@ -1,4 +1,3 @@
-
 import type { FC } from "react";
 import { services_list } from "../info/data";
 import { ServiceListOption } from "./ServiceListOption";
@@ -23,6 +22,7 @@ export const ServicesList: FC<ServicesListProps> = ({ exclude_tags = [] }) => {
       <Title
         isSecondary={is_limited}
         title={is_limited ? "Outros serviços disponíveis" : "Serviços"}
+        gutterBottom={false}
       />
       {!is_limited && (
         <div className="services-list__description">

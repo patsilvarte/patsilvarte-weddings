@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import type { FC } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -6,6 +6,7 @@ import { services_list } from "../../info/data";
 import { allPhotos } from "../../info/photo_tags";
 import type { WeddingServices } from "../../info/types";
 import { PhotoGallery } from "../general/PhotoGallery";
+import { Title } from "../general/Title";
 import { ServicesList } from "../ServicesList";
 
 interface ServiceDetailsProps {
@@ -14,6 +15,8 @@ interface ServiceDetailsProps {
 
 export const ServiceDetails: FC<ServiceDetailsProps> = ({ service }) => {
   const navigate = useNavigate();
+  const isMobile = !useMediaQuery("(min-width:900px)");
+
   const photos = allPhotos.filter((photo) => photo.tags.includes(service));
   const service_data = services_list.find((s) => s.tag === service);
 
@@ -28,9 +31,7 @@ export const ServiceDetails: FC<ServiceDetailsProps> = ({ service }) => {
 
   return (
     <div>
-      <Typography variant="h1" className="HelloJanuaryCyrillicScript">
-        {service_data.name}
-      </Typography>
+      <Title title={service_data.name} gutterBottom={isMobile} />
       <Typography variant="h6">{service_data.description}</Typography>
       <PhotoGallery photosList={photos} />
       <ServicesList exclude_tags={[service]} />

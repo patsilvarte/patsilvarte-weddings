@@ -1,6 +1,5 @@
 import { Typography, type TypographyProps, useMediaQuery } from "@mui/material";
 import type { FC } from "react";
-import "./Title.scss";
 
 interface TitleProps {
   title: string;
@@ -8,6 +7,7 @@ interface TitleProps {
   isSecondary?: boolean;
   className?: string;
   align?: TypographyProps["align"];
+  gutterBottom?: TypographyProps["gutterBottom"];
 }
 
 export const Title: FC<TitleProps> = ({
@@ -16,6 +16,7 @@ export const Title: FC<TitleProps> = ({
   isSecondary,
   className,
   align = "center",
+  gutterBottom = true,
 }) => {
   const isMobile = !useMediaQuery("(min-width:900px)");
 
@@ -25,7 +26,7 @@ export const Title: FC<TitleProps> = ({
         isMobile ? (isSecondary ? "h3" : "h2") : isSecondary ? "h2" : "h1"
       }
       component={isH1 ? "h1" : "h2"}
-      gutterBottom
+      gutterBottom={gutterBottom}
       className={`HelloJanuaryCyrillicScript ${className}`}
       align={align}
     >
@@ -38,6 +39,7 @@ export const SubTitle: FC<TitleProps> = ({
   title,
   className,
   align = "center",
+  gutterBottom = true,
 }) => {
   const isMobile = !useMediaQuery("(min-width:900px)");
 
@@ -45,7 +47,7 @@ export const SubTitle: FC<TitleProps> = ({
     <Typography
       variant={isMobile ? "h5" : "h4"}
       component="h3"
-      gutterBottom
+      gutterBottom={gutterBottom}
       className={`HelloParisSansRegular subtitle ${className}`}
       align={align}
     >

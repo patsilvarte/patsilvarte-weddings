@@ -18,7 +18,7 @@ export const WeddingsList: FC<WeddingListProps> = ({ isHomepage }) => {
 
   return (
     <div className="weddings-list" id="casamentos">
-      <Title title="Casamentos" />
+      <Title title="Casamentos" gutterBottom={false} />
       <SubTitle title="detalhes sobre o dia especial dos nossos clientes" />
 
       <div className="weddings-list__container">
