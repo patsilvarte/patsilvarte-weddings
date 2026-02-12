@@ -49,8 +49,14 @@
 
   &__logo {
     width: 60%;
+
+    @media (max-width: 900px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
   &__headline {
+    width: 80%;
     max-width: 500px;
     color: white;
     text-align: center;
@@ -87,7 +93,9 @@
       font-size: 22px;
       color: white;
 
-      transition: opacity 0.25s ease, transform 0.25s ease;
+      transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
     }
   }
 }

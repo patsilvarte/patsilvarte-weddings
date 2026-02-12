@@ -1,5 +1,5 @@
 import Masonry from "@mui/lab/Masonry";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import React, { useEffect, useState, type FC } from "react";
 import type { PhotoInfo } from "../../info/types";
 import "./PhotoGallery.scss";
@@ -10,6 +10,8 @@ interface PhotoGalleryProps {
 }
 
 export const PhotoGallery: FC<PhotoGalleryProps> = ({ photosList }) => {
+  const isMobile = !useMediaQuery("(min-width:900px)");
+
   const [loaded, setLoaded] = useState<Record<number, boolean>>({});
   const [open, setOpen] = React.useState(false);
   const [activeIndex, setActiveIndex] = React.useState<number>(0);
@@ -38,7 +40,7 @@ export const PhotoGallery: FC<PhotoGalleryProps> = ({ photosList }) => {
 
   return (
     <Box className="photo-gallery">
-      <Masonry columns={3} spacing={2}>
+      <Masonry columns={isMobile ? 2 : 3} spacing={2}>
         {photosList.map((item, index) => (
           <div
             key={index}
@@ -57,6 +59,7 @@ export const PhotoGallery: FC<PhotoGalleryProps> = ({ photosList }) => {
           </div>
         ))}
       </Masonry>
+
       <PhotoGalleryDialog
         open={open}
         handleClose={handleClose}

@@ -1,26 +1,22 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import { ContactForm } from "../ContactForm";
 import { SocialContacts } from "../general/SocialContacts";
+import { Title } from "../general/Title";
 import "./Contacts.scss";
 
 export const Contacts = () => {
+  const isMobile = !useMediaQuery("(min-width:900px)");
+
   return (
     <div className="contacts" id="contactos">
-      <Typography
-        variant="h1"
-        gutterBottom
-        className="HelloJanuaryCyrillicScript"
-        align="center"
-      >
-        Como te podemos ajudar?
-      </Typography>
+      <Title title="Como te podemos ajudar?" />
       <div className="contacts__description">
         <Typography variant="body1" gutterBottom align="center">
           Se queres obter mais informações sobre um dos nossos serviços ou
           discutir como podemos contribuir para o teu dia especial, estamos aqui
           para te ajudar!
         </Typography>
-        <SocialContacts />
+        {!isMobile && <SocialContacts />}
         {/* <Typography variant="body1" gutterBottom align="center">
           Podes entrar em contacto connosco através do formulário abaixo, enviar
           um email diretamente para nós para patsilvarte.weddings.info@gmail.com

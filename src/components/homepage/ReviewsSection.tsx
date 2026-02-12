@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
@@ -10,11 +10,12 @@ import "swiper/css/navigation";
 // @ts-expect-error
 import "swiper/css/pagination";
 
-import { Navigation, Pagination } from "swiper/modules";
+import { Keyboard, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { reviews_weddings_list } from "../../info/data";
 import { ReviewCard } from "../general/ReviewCard";
+import { Title } from "../general/Title";
 import "./ReviewsSection.scss";
 
 export const ReviewsSection = () => {
@@ -22,16 +23,10 @@ export const ReviewsSection = () => {
 
   return (
     <Box className="wedding-reviews">
-      <Typography
-        variant="h1"
-        gutterBottom
-        className="HelloJanuaryCyrillicScript"
-      >
-        O que dizem os nossos noivos
-      </Typography>
-
+      <Title title="O que dizem os nossos noivos" />
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Keyboard]}
+        keyboard
         navigation
         effect="fade"
         pagination={{ clickable: true }}
@@ -39,10 +34,10 @@ export const ReviewsSection = () => {
         slidesPerView={1}
         breakpoints={{
           900: {
-            slidesPerView: 2,
+            slidesPerView: reviews.length > 1 ? 2 : 1,
+            spaceBetween: 60,
           },
         }}
-        style={{ paddingTop: "20px", paddingBottom: "50px" }}
       >
         {reviews.map((info, index) => (
           <SwiperSlide key={index}>

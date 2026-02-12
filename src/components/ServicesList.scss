@@ -18,14 +18,25 @@
     max-width: 1000px;
     margin-top: 40px;
 
+    @media (max-width: 900px) {
+      gap: 32px 0px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 0px;
+    }
+
     &--limited {
       gap: 24px;
+
+      @media (max-width: 900px) {
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
     }
   }
 
   &__description {
     margin-bottom: 20px;
-    margin-top: -30px !important;
     max-width: 600px;
   }
 }
