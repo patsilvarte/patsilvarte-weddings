@@ -26,18 +26,18 @@ export const ReviewsSection = () => {
       <Title title="O que dizem os nossos noivos" />
       <Swiper
         modules={[Navigation, Pagination, Keyboard]}
-        navigation
         keyboard
+        navigation
         effect="fade"
         pagination={{ clickable: true }}
-        spaceBetween={60}
+        spaceBetween={30}
         slidesPerView={1}
         breakpoints={{
           900: {
             slidesPerView: reviews.length > 1 ? 2 : 1,
+            spaceBetween: 60,
           },
         }}
-        style={{ paddingTop: "20px", paddingBottom: "50px" }}
       >
         {reviews.map((info, index) => (
           <SwiperSlide key={index}>
