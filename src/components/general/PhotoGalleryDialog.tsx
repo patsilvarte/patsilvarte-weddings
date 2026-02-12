@@ -72,7 +72,7 @@ export const PhotoGalleryDialog: FC<PhotoGalleryDialogProps> = ({
             grabCursor={true}
             keyboard
             loop
-            className="photo-gallery__swiper"
+            className="photo-gallery-dialog__swiper"
             pagination={{
               type: "fraction",
             }}

@@ -29,4 +29,17 @@
     max-width: 90vw;
     object-fit: contain;
   }
+
+  &__swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    background: #000;
+    opacity: 0.4;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
 }
