@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import type { FC } from "react";
 import { useMediaQuery } from "usehooks-ts";
+import "./Title.scss";
 
 interface TitleProps {
   title: string;
@@ -40,7 +41,7 @@ export const SubTitle: FC<TitleProps> = ({ title, className }) => {
       variant={isMobile ? "h5" : "h4"}
       component="h3"
       gutterBottom
-      className={`HelloParisSansRegular ${className}`}
+      className={`HelloParisSansRegular subtitle ${className}`}
       align="center"
     >
       {title}

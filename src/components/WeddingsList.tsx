@@ -19,10 +19,7 @@ export const WeddingsList: FC<WeddingListProps> = ({ isHomepage }) => {
   return (
     <div className="weddings-list" id="casamentos">
       <Title title="Casamentos" />
-      <SubTitle
-        title="detalhes sobre o dia especial dos nossos clientes"
-        className="weddings-list__subtitle"
-      />
+      <SubTitle title="detalhes sobre o dia especial dos nossos clientes" />
 
       <div className="weddings-list__container">
         {finalList.map((info) => (

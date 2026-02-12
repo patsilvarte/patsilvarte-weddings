@@ -1,0 +1,7 @@
+.subtitle {
+  margin-top: -40px !important;
+
+  @media (max-width: 900px) {
+    margin-top: -20px !important;
+  }
+}
