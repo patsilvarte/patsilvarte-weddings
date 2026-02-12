@@ -22,9 +22,19 @@
     margin-bottom: 8px;
     transition: transform 0.3s ease;
 
+    @media (max-width: 900px) {
+      width: 100px;
+      height: 100px;
+    }
+
     &--small {
       width: 100px;
       height: 100px;
+
+      @media (max-width: 900px) {
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 
