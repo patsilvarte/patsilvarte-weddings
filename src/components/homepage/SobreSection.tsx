@@ -1,5 +1,6 @@
 import { Typography, useMediaQuery } from "@mui/material";
 import patsilvarteAboutmePhoto from "../../assets/Patsilvart_me_photo.png";
+import { Title } from "../general/Title";
 import "./SobreSection.scss";
 
 export const SobreSection = () => {
@@ -8,13 +9,7 @@ export const SobreSection = () => {
   return (
     <div className="about-section">
       <div className="about-section__text">
-        <Typography
-          variant="h1"
-          gutterBottom
-          className="HelloJanuaryCyrillicScript"
-        >
-          Sobre
-        </Typography>
+        <Title title="Sobre" align={isMobile ? "center" : "left"} />
         {isMobile && (
           <img
             alt="Patsilvarte Weddings founder Patricia Silva Fernandes"
