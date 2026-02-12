@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 // @ts-expect-error
 import "swiper/css/pagination";
 
-import { Navigation, Pagination } from "swiper/modules";
+import { Keyboard, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { reviews_weddings_list } from "../../info/data";
@@ -25,15 +25,16 @@ export const ReviewsSection = () => {
     <Box className="wedding-reviews">
       <Title title="O que dizem os nossos noivos" />
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Keyboard]}
         navigation
+        keyboard
         effect="fade"
         pagination={{ clickable: true }}
-        spaceBetween={30}
+        spaceBetween={40}
         slidesPerView={1}
         breakpoints={{
           900: {
-            slidesPerView: 2,
+            slidesPerView: reviews.length > 1 ? 2 : 1,
           },
         }}
         style={{ paddingTop: "20px", paddingBottom: "50px" }}
