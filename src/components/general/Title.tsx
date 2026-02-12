@@ -1,6 +1,5 @@
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import type { FC } from "react";
-import { useMediaQuery } from "usehooks-ts";
 import "./Title.scss";
 
 interface TitleProps {

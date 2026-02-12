@@ -18,11 +18,7 @@ export const WeddingListCard: FC<WeddingListCardProps> = ({ info }) => {
   const navigate = useNavigate();
   const { name, tags, img, alt, img_hover, url } = info;
   return (
-    <Card
-      sx={{ maxWidth: 1100, minWidth: 300, width: "30%" }}
-      className="weddings-list__card"
-      onClick={() => url && navigate(url)}
-    >
+    <Card className="weddings-list__card" onClick={() => url && navigate(url)}>
       <CardActionArea>
         <CardMedia component="img" height={500} image={img} alt={alt} />
         <CardContent className="weddings-list__card-overlay">
