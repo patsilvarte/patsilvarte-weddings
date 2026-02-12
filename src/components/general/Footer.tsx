@@ -1,10 +1,9 @@
 import { Typography, useMediaQuery } from "@mui/material";
-import theme from "../../theme";
 import "./Footer.scss";
 import { SocialContacts } from "./SocialContacts";
 
 export const Footer = () => {
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = !useMediaQuery("(min-width:900px)");
 
   return (
     <footer className="footer">
