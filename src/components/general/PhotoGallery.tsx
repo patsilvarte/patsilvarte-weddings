@@ -52,7 +52,9 @@ export const PhotoGallery: FC<PhotoGalleryProps> = ({ photosList }) => {
           keyboard
           loop
           className="photo-gallery__swiper"
-          pagination={{ clickable: true }}
+          pagination={{
+            type: "fraction",
+          }}
         >
           {photosList.map((photo, index) => (
             <SwiperSlide key={index}>
