@@ -9,7 +9,7 @@ const largest = (urls: string[]) => urls[urls.length - 1];
 
 interface LazyImageProps {
   image: string[];
-  alt: string;
+  alt?: string;
   className?: string;
   sizes?: string;
   loading?: "lazy" | "eager";
