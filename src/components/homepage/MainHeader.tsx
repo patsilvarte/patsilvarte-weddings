@@ -22,7 +22,7 @@ export const MainHeader: FC<MainHeaderProps> = ({
     <div className="main-header">
       <LazyImage
         image={photo_patricia_joao_b31}
-        alt="Wedding"
+        alt="Patsilvarte Weddings - Papelaria e detalhes de casamento com identidade, intenção e elegância"
         loading="eager"
         className="main-header__background"
       />
