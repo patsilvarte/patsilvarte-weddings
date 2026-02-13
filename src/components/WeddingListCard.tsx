@@ -9,6 +9,7 @@ import type { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import type { WeddingInfo } from "../info/types";
 import "./WeddingsList.scss";
+import { LazyImage } from "./general/LazyImage";
 
 interface WeddingListCardProps {
   info: WeddingInfo;
@@ -20,10 +21,22 @@ export const WeddingListCard: FC<WeddingListCardProps> = ({ info }) => {
   return (
     <Card className="weddings-list__card" onClick={() => url && navigate(url)}>
       <CardActionArea>
-        <CardMedia component="img" height={500} image={img} alt={alt} />
+        <CardMedia
+          component={(props) => (
+            <LazyImage
+              {...props}
+              image={img}
+              className="weddings-list__card-image"
+            />
+          )}
+          alt={alt}
+        />
         <CardContent className="weddings-list__card-overlay">
           {img_hover ? (
-            <img className="weddings-list__card-names" src={img_hover} />
+            <LazyImage
+              className="weddings-list__card-names"
+              image={img_hover}
+            />
           ) : (
             // <CardMedia component="img" width={200} image={img_hover} />
             <Typography gutterBottom variant="h5" component="div">

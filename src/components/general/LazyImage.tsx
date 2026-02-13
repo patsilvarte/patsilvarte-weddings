@@ -20,7 +20,7 @@ export const LazyImage = ({
   alt,
   className,
   sizes = "(max-width: 768px) 90vw, 1200px",
-  loading = "lazy", //here should use loading="eager"
+  loading = "lazy", //hero should use loading="eager"
 }: LazyImageProps) => {
   return (
     <img

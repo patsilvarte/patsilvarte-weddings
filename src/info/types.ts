@@ -1,8 +1,8 @@
 export type WeddingInfo = {
   name: string;
   tags: WeddingServices[];
-  img: string;
-  img_hover?: string;
+  img: string[];
+  img_hover?: string[];
   alt: string;
   url?: string;
   review?: string;

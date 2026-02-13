@@ -1,12 +1,13 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import type { WeddingServices } from "../../info/types";
+import { LazyImage } from "./LazyImage";
 import "./ReviewCard.scss";
 
 interface ReviewProps {
   name: string;
   message: string;
   services: WeddingServices[];
-  img: string;
+  img: string[];
   isWeddingPage?: boolean;
 }
 
@@ -25,7 +26,7 @@ export const ReviewCard = ({
         <Typography variant="body1">“{message}”</Typography>
 
         <div className="review-card__ref">
-          <img className="review-card__img" src={img} />
+          <LazyImage className="review-card__img" image={img} />
 
           <div>
             <Typography variant="h6" fontWeight={600}>

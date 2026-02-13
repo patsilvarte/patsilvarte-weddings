@@ -47,6 +47,15 @@
     }
   }
 
+  &__card-image {
+    height: 500px !important;
+    display: block; // removes inline whitespace
+    width: 100%; // fill width of parent
+    height: 100%; // fill height of parent
+    object-fit: cover; // crop/center like CardMedia
+    object-position: center; // center the image
+  }
+
   &__card-names {
     width: 80%;
     @media (max-width: 900px) {
