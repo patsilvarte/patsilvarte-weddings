@@ -1,5 +1,6 @@
 import { Typography, useMediaQuery } from "@mui/material";
-import patsilvarteAboutmePhoto from "../../assets/Patsilvart_me_photo.png";
+import patsilvarteAboutmePhoto from "../../assets/Patsilvart_me_photo.png?w=320;480;768;1024;1600;2200&format=webp";
+import { LazyImage } from "../general/LazyImage";
 import { Title } from "../general/Title";
 import "./SobreSection.scss";
 
@@ -11,10 +12,10 @@ export const SobreSection = () => {
       <div className="about-section__text">
         <Title title="Sobre" align={isMobile ? "center" : "left"} />
         {isMobile && (
-          <img
+          <LazyImage
+            image={patsilvarteAboutmePhoto}
             alt="Patsilvarte Weddings founder Patricia Silva Fernandes"
             className="about-section__image"
-            src={patsilvarteAboutmePhoto}
           />
         )}
         <Typography variant="body1" gutterBottom>
@@ -55,10 +56,10 @@ export const SobreSection = () => {
         </div>
       </div>
       {!isMobile && (
-        <img
+        <LazyImage
+          image={patsilvarteAboutmePhoto}
           alt="Patsilvarte Weddings founder Patricia Silva Fernandes"
           className="about-section__image"
-          src={patsilvarteAboutmePhoto}
         />
       )}
     </div>
