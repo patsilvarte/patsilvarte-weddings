@@ -1,8 +1,8 @@
-import IMG_9783 from "../../assets/sofia_julien/IMG_9783.jpg";
-import IMG_9785 from "../../assets/sofia_julien/IMG_9785.jpg";
-import IMG_9799 from "../../assets/sofia_julien/IMG_9799.jpg";
-import IMG_9804 from "../../assets/sofia_julien/IMG_9804.jpg";
-import placas_setas_dia from "../../assets/sofia_julien/placas-setas-dia.jpg";
+import IMG_9783 from "../../assets/sofia_julien/IMG_9783.jpg?w=320;480;768;1024;1600;2200&format=webp";
+import IMG_9785 from "../../assets/sofia_julien/IMG_9785.jpg?w=320;480;768;1024;1600;2200&format=webp";
+import IMG_9799 from "../../assets/sofia_julien/IMG_9799.jpg?w=320;480;768;1024;1600;2200&format=webp";
+import IMG_9804 from "../../assets/sofia_julien/IMG_9804.jpg?w=320;480;768;1024;1600;2200&format=webp";
+import placas_setas_dia from "../../assets/sofia_julien/placas-setas-dia.jpg?w=320;480;768;1024;1600;2200&format=webp";
 import { type PhotoInfo, WeddingServices } from "../types";
 
 export const sj_IMG_9783_photo: PhotoInfo = {

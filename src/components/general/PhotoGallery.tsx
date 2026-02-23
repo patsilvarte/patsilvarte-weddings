@@ -2,6 +2,7 @@ import Masonry from "@mui/lab/Masonry";
 import { Box, useMediaQuery } from "@mui/material";
 import React, { useEffect, useState, type FC } from "react";
 import type { PhotoInfo } from "../../info/types";
+import { LazyImage } from "./LazyImage";
 import "./PhotoGallery.scss";
 import { PhotoGalleryDialog } from "./PhotoGalleryDialog";
 
@@ -50,9 +51,8 @@ export const PhotoGallery: FC<PhotoGalleryProps> = ({ photosList }) => {
             onClick={() => handleOpen(index)}
             style={{ cursor: "pointer" }}
           >
-            <img
-              src={item.src}
-              loading="lazy"
+            <LazyImage
+              image={item.src}
               onLoad={() => setLoaded((prev) => ({ ...prev, [index]: true }))}
               className="photo-gallery__image"
             />

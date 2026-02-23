@@ -13,6 +13,7 @@ interface LazyImageProps {
   className?: string;
   sizes?: string;
   loading?: "lazy" | "eager";
+  onLoad?: () => void;
 }
 
 export const LazyImage = ({
@@ -21,6 +22,7 @@ export const LazyImage = ({
   className,
   sizes = "(max-width: 768px) 90vw, 1200px",
   loading = "lazy", //hero should use loading="eager"
+  onLoad,
 }: LazyImageProps) => {
   return (
     <img
@@ -31,6 +33,7 @@ export const LazyImage = ({
       className={className}
       loading={loading}
       decoding="async"
+      onLoad={onLoad}
     />
   );
 };

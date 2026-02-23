@@ -17,7 +17,7 @@ export type ServiceInfo = {
 };
 
 export type PhotoInfo = {
-  src: string;
+  src: string[];
   alt?: string;
   caption?: string;
   tags: WeddingServices[];
