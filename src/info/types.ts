@@ -1,8 +1,8 @@
 export type WeddingInfo = {
   name: string;
   tags: WeddingServices[];
-  img: string;
-  img_hover?: string;
+  img: string[];
+  img_hover?: string[];
   alt: string;
   url?: string;
   review?: string;
@@ -17,7 +17,7 @@ export type ServiceInfo = {
 };
 
 export type PhotoInfo = {
-  src: string;
+  src: string[];
   alt?: string;
   caption?: string;
   tags: WeddingServices[];

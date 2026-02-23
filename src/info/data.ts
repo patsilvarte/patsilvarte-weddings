@@ -1,10 +1,10 @@
-import gloria_micael_IMG_9109 from "../assets/gloria_micael/IMG_9109.jpg";
-import GM_names_logo from "../assets/gloria_micael/logo-nomes-black.png";
-import photo_patricia_joao_b6 from "../assets/patricia_joao/b_6.jpg";
-import PJ_names_logo from "../assets/patricia_joao/logo-nomes-black.png";
-import sofia_julien_IMG_9783 from "../assets/sofia_julien/IMG_9783.jpg";
+import gloria_micael_IMG_9109 from "../assets/gloria_micael/IMG_9109.jpg?w=320;480;768;1024;1600;2200&format=webp";
+import GM_names_logo from "../assets/gloria_micael/logo-nomes-black.png?w=320;480;768;1024;1600;2200&format=webp";
+import photo_patricia_joao_b6 from "../assets/patricia_joao/b_6.jpg?w=320;480;768;1024;1600;2200&format=webp";
+import PJ_names_logo from "../assets/patricia_joao/logo-nomes-black.png?w=320;480;768;1024;1600;2200&format=webp";
+import sofia_julien_IMG_9782 from "../assets/sofia_julien/IMG_9782.jpg?w=320;480;768;1024;1600;2200&format=webp";
+import SJ_names_logo from "../assets/sofia_julien/logo-nomes-black.png?w=320;480;768;1024;1600;2200&format=webp";
 
-import SJ_names_logo from "../assets/sofia_julien/logo-nomes-black.png";
 import { type ServiceInfo, type WeddingInfo, WeddingServices } from "./types";
 
 export const casamento_patricia_joao_13_7_24: WeddingInfo = {
@@ -47,7 +47,7 @@ export const casamento_gloria_micael_13_9_25: WeddingInfo = {
 export const casamento_sofia_julien_4_10_25: WeddingInfo = {
   name: "Sofia e Julien",
   alt: "casamento Sofia e Julien",
-  img: sofia_julien_IMG_9783,
+  img: sofia_julien_IMG_9782,
   img_hover: SJ_names_logo,
   url: "/casamentos/041025-sofia-julien",
   tags: [WeddingServices.PAINEIS_BOAS_VINDAS],

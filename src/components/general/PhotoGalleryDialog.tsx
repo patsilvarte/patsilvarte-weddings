@@ -6,6 +6,7 @@ import type { FC } from "react";
 import { Keyboard, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { PhotoInfo } from "../../info/types";
+import { LazyImage } from "./LazyImage";
 import "./PhotoGalleryDialog.scss";
 
 interface PhotoGalleryDialogProps {
@@ -79,7 +80,7 @@ export const PhotoGalleryDialog: FC<PhotoGalleryDialogProps> = ({
           >
             {photosList.map((photo, index) => (
               <SwiperSlide key={index}>
-                <img src={photo.src} className="photo-gallery__image" />
+                <LazyImage image={photo.src} className="photo-gallery__image" />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -92,8 +93,8 @@ export const PhotoGalleryDialog: FC<PhotoGalleryDialogProps> = ({
               <ArrowBackIosNewIcon />
             </IconButton>
 
-            <img
-              src={photosList[activeIndex].src}
+            <LazyImage
+              image={photosList[activeIndex].src}
               className="photo-gallery-dialog__image"
             />
 
