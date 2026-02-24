@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@mui/material";
 import { useCallback, useEffect } from "react";
 import { useLocation, useNavigationType } from "react-router-dom";
 import { useScrollLock } from "usehooks-ts";
@@ -8,6 +9,7 @@ export const useLock = () => {
   const { unlock, lock, isLocked } = useScrollLock();
   const location = useLocation();
   const navigationType = useNavigationType();
+  const isMobile = !useMediaQuery("(min-width:900px)");
 
   const markScrollUnlocked = useCallback(() => {
     sessionStorage.setItem(SCROLL_UNLOCK_KEY, Date.now().toString());
@@ -20,7 +22,7 @@ export const useLock = () => {
 
   useEffect(() => {
     const cameFromAnotherPage = navigationType === "PUSH";
-    if (cameFromAnotherPage) {
+    if (cameFromAnotherPage || isMobile) {
       markScrollUnlocked();
       return;
     }
@@ -33,7 +35,14 @@ export const useLock = () => {
     } else {
       markScrollUnlocked();
     }
-  }, [location.pathname, unlock, lock, navigationType, markScrollUnlocked]);
+  }, [
+    location.pathname,
+    unlock,
+    lock,
+    navigationType,
+    markScrollUnlocked,
+    isMobile,
+  ]);
 
   useEffect(() => {
     // HARD RESET to allow scroll on other pages

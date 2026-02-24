@@ -1,0 +1,22 @@
+.explore-more {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 80px;
+
+  @media (max-width: 900px) {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+}

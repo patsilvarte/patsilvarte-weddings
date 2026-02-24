@@ -38,7 +38,6 @@ export const WeddingListCard: FC<WeddingListCardProps> = ({ info }) => {
               image={img_hover}
             />
           ) : (
-            // <CardMedia component="img" width={200} image={img_hover} />
             <Typography gutterBottom variant="h5" component="div">
               {name}
             </Typography>
