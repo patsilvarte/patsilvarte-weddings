@@ -9,10 +9,10 @@ export const GloriaMicaelWeddingDetails = () => {
   return (
     <div>
       <Typography variant="h2" className="HelloJanuaryCyrillicScript">
-        Glória e Micael
+        {casamento_gloria_micael_13_9_25.name}
       </Typography>
       <Typography variant="h4" className="HelloParisSansRegular">
-        13.09.2025
+        {casamento_gloria_micael_13_9_25.date}
       </Typography>
       <PhotoGallery photosList={gloriaMicaelPhotos} />
       <WeddingReview weddingInfo={casamento_gloria_micael_13_9_25} />

@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 
+import { casamento_patricia_joao_13_7_24 } from "../../info/data";
 import { photosListPatriciaJoao } from "../../info/photo_tags";
 import { PhotoGallery } from "../general/PhotoGallery";
 
@@ -7,10 +8,10 @@ export const PatriciaJoaoWeddingDetails = () => {
   return (
     <div>
       <Typography variant="h2" className="HelloJanuaryCyrillicScript">
-        Patrícia e João
+        {casamento_patricia_joao_13_7_24.name}
       </Typography>
       <Typography variant="h4" className="HelloParisSansRegular">
-        13.07.2024
+        {casamento_patricia_joao_13_7_24.date}
       </Typography>
       <PhotoGallery photosList={photosListPatriciaJoao} />
     </div>

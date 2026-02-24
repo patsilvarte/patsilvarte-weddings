@@ -1,5 +1,6 @@
 export type WeddingInfo = {
   name: string;
+  date: string;
   tags: WeddingServices[];
   img: string[];
   img_hover?: string[];
