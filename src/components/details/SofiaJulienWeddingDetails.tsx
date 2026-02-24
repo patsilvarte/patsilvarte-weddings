@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import { casamento_sofia_julien_4_10_25 } from "../../info/data";
 import { sofiaJulienPhotos } from "../../info/photo_tags";
 import { PhotoGallery } from "../general/PhotoGallery";
+import { ExploreMore } from "./ExploreMore";
 import { WeddingReview } from "./WeddingReview";
 
 export const SofiaJulienWeddingDetails = () => {
@@ -16,6 +17,7 @@ export const SofiaJulienWeddingDetails = () => {
       </Typography>
       <PhotoGallery photosList={sofiaJulienPhotos} />
       <WeddingReview weddingInfo={casamento_sofia_julien_4_10_25} />
+      <ExploreMore />
     </div>
   );
 };

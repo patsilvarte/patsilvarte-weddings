@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import { casamento_gloria_micael_13_9_25 } from "../../info/data";
 import { gloriaMicaelPhotos } from "../../info/photo_tags";
 import { PhotoGallery } from "../general/PhotoGallery";
+import { ExploreMore } from "./ExploreMore";
 import { WeddingReview } from "./WeddingReview";
 
 export const GloriaMicaelWeddingDetails = () => {
@@ -16,6 +17,7 @@ export const GloriaMicaelWeddingDetails = () => {
       </Typography>
       <PhotoGallery photosList={gloriaMicaelPhotos} />
       <WeddingReview weddingInfo={casamento_gloria_micael_13_9_25} />
+      <ExploreMore />
     </div>
   );
 };
